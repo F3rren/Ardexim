@@ -1,44 +1,61 @@
-# F-14 Tomcat — Scheda tecnica interattiva
+# Catalogo Aerei Militari
 
-Sito vetrina single-page dedicato al **Grumman F-14 Tomcat**: specifiche, storia,
-armamento, impiego operativo e una galleria storica. Tema tattico/HUD, dark mode.
+Catalogo interattivo di aerei militari, costruito con **Next.js**. La home è un
+**glossario** ricercabile; ogni aereo ha una **pagina dedicata** con specifiche,
+storia, armamento, varianti, galleria storica e un **modello 3D interattivo**.
 
-🔗 **Demo:** apri `index.html` in un browser (oppure pubblicala con GitHub Pages).
+Primo aereo completo: **Grumman F-14 Tomcat**. Il progetto è pensato per crescere:
+aggiungere un aereo = aggiungere un file dati (+ eventuale modello 3D).
 
-## Caratteristiche
-
-- **Modello 3D interattivo** del Tomcat (Three.js) ruotabile col mouse, con ali a
-  geometria variabile che seguono lo slider e postbruciatore che si accende in supersonico.
-- **Geometria alare variabile** sincronizzata tra modello 3D e blueprint 2D (20°→68°).
-- **Galleria storica in stile Apple** con parallax scroll-linked (`animation-timeline: view()`).
-- Sezioni: panoramica, sistemi & componenti, specifiche (F-14D), armamento, impiego
-  operativo, varianti, timeline storica e dati utili.
-- **Accessibile e responsive**: rispetto di `prefers-reduced-motion`, focus states,
-  contrasto AA, layout a 375 / 768 / 1024 / 1440 px, navigazione mobile.
+🔗 **Live (GitHub Pages):** https://f3rren.github.io/f14-tomcat/
 
 ## Stack
 
-- HTML + CSS + JavaScript vanilla, **single file** (zero build).
-- [Three.js](https://threejs.org/) via CDN (caricamento progressivo, con fallback se offline).
-- Tipografia: Oswald · Share Tech Mono · Inter (Google Fonts).
+- [Next.js](https://nextjs.org/) (App Router) + **TypeScript**, export statico (`output: 'export'`)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [react-three-fiber](https://r3f.docs.pmnd.rs/) + [drei](https://github.com/pmndrs/drei) — modello 3D
+- [Framer Motion](https://www.framer.com/motion/) — reveal, parallax, count-up
+- [Zustand](https://zustand.docs.pmnd.rs/) — stato condiviso (geometria alare)
+
+## Sviluppo
+
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # export statico in ./out
+```
+
+## Architettura
+
+```
+src/
+  app/
+    page.tsx                 # catalogo / glossario aerei
+    aerei/[slug]/page.tsx    # pagina dettaglio (statica via generateStaticParams)
+  components/  catalog · layout · sections · three · ui
+  lib/
+    data/aircraft/           # registro aerei (un file per aereo)
+    store/                   # stato geometria alare
+public/images/aircraft/<slug>/   # immagini self-hostate
+```
+
+### Aggiungere un aereo
+
+1. Creare `src/lib/data/aircraft/<slug>.ts` con i dati (interfaccia `Aircraft`).
+2. Registrarlo in `src/lib/data/aircraft/index.ts`.
+3. (Opzionale) aggiungere un modello 3D in `src/components/three/models/` e mapparlo nel registry.
+
+## Deploy
+
+Push su `main` → GitHub Actions (`.github/workflows/deploy.yml`) builda l'export e
+pubblica su GitHub Pages. `basePath`/`assetPrefix` valgono `/f14-tomcat` solo in produzione.
 
 ## Crediti immagini
 
-Le fotografie storiche provengono da **Wikimedia Commons** e sono opere della
-**U.S. Navy in pubblico dominio**:
-
-- General Dynamics F-111B (1965)
-- Prototipi YF-14A in formazione (~1972)
-- F-14D sul Golfo Persico (2005)
-
-Fonti dei dati: [Wikipedia — Grumman F-14 Tomcat](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
+Fotografie storiche: **U.S. Navy, pubblico dominio**, via Wikimedia Commons.
+Fonti dati: [Wikipedia](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [aereimilitari.org](https://www.aereimilitari.org/Aerei/F-14.htm).
-
-## Roadmap
-
-- [ ] Porting a **React / Next.js** (componenti, `next/image`, react-three-fiber, SSG/SEO).
 
 ## Licenza
 
-Codice: MIT. Le immagini restano di pubblico dominio (U.S. Navy). Contenuti a scopo
-informativo/divulgativo.
+Codice: MIT. Immagini: pubblico dominio (U.S. Navy). Contenuti a scopo divulgativo.
