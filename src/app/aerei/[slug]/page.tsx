@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAircraftBySlug, getAllSlugs } from "@/lib/data/aircraft";
+import { nationStyle } from "@/lib/theme/nations";
 import Navbar, { type NavSection } from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Overview from "@/components/sections/Overview";
@@ -52,7 +53,9 @@ export default async function AircraftPage({
   ];
 
   return (
-    <>
+    // La palette accentata della nazione viene applicata via variabili CSS
+    // e si propaga in cascata a navbar e a tutte le sezioni della scheda.
+    <div style={nationStyle(a.country)}>
       <Navbar sections={sections} title={a.name} />
       <main>
         <Hero aircraft={a} />
@@ -66,6 +69,6 @@ export default async function AircraftPage({
         <FinalCta aircraft={a} />
         <Credits aircraft={a} />
       </main>
-    </>
+    </div>
   );
 }

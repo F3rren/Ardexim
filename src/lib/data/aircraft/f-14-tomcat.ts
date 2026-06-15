@@ -15,7 +15,7 @@ export const f14Tomcat: Aircraft = {
   thumbAlt: "F-14D Tomcat in volo sul Golfo Persico",
   // Scarica un modello CC-BY da Sketchfab (glTF/GLB) e salvalo in
   // public/models/f-14-tomcat.glb, poi compila model3dCredit qui sotto.
-  model3d: "/models/f-14-tomcat.glb",
+  model3d: "/models/USA/f-14-tomcat.glb",
   model3dCredit: {
     author: "bohmerang",
     url: "https://sketchfab.com/3d-models/f-14-tomcat-fighter-jet-free-497f77c311b5411d9b567d8707a81c33",

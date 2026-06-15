@@ -13,7 +13,7 @@ export const f15eStrikeEagle: Aircraft = {
   topSpeed: "Mach 2.5",
   thumb: "/images/aircraft/f-15e-strike-eagle/f15e-banks-tanker.jpg",
   thumbAlt: "F-15E Strike Eagle vira allontanandosi da un'aerocisterna",
-  model3d: "/models/f-15e_strike_eagle.glb",
+  model3d: "/models/USA/f-15e_strike_eagle.glb",
   model3dCredit: {
     author: "bohmerang",
     url: "https://sketchfab.com/3d-models/f-15e-strike-eagle-fighter-jet-free-fff7d75490474e9b964d90cc031c8d01",
