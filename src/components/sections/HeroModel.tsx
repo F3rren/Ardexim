@@ -5,11 +5,8 @@ import { useState } from "react";
 
 const Hangar = dynamic(() => import("@/components/three/Hangar"), {
   ssr: false,
-  loading: () => (
-    <div className="absolute inset-0 flex items-center justify-center text-muted font-mono text-[13px]">
-      Inizializzazione modello 3D…
-    </div>
-  ),
+  // nessuna anteprima/placeholder: il modello compare direttamente appena pronto
+  loading: () => null,
 });
 
 export default function HeroModel({ modelUrl }: { modelUrl?: string }) {
