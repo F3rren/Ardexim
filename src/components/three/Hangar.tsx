@@ -36,13 +36,14 @@ export default function Hangar({
 
       {/* solo auto-rotazione: nessuna interazione dell'utente */}
       <OrbitControls
+        // enabled={false} 
         makeDefault
         enableRotate={false}
         enableZoom={false}
         enablePan={false}
-        enableDamping={false}
+        enableDamping={true}
         autoRotate={!reduce}
-        autoRotateSpeed={0.9}
+        autoRotateSpeed={1.5}
       />
     </Canvas>
   );

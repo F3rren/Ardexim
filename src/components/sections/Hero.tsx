@@ -49,7 +49,7 @@ export default function Hero({ aircraft }: { aircraft: Aircraft }) {
             <Reveal>
               <div className="flex flex-wrap gap-2.5 mb-7">
                 {aircraft.heroBadges.map((b, i) => (
-                  <Badge key={i} {...b} />
+                  <Badge key={i} {...b} solid />
                 ))}
               </div>
             </Reveal>

@@ -11,7 +11,7 @@ export const su57Felon: Aircraft = {
   service: "2020 – oggi",
   status: "in-servizio",
   topSpeed: "Mach 2",
-  unitCost: "≈ 35 mln $ (stima)",
+  unitCost: "≈ 2,2 mld ₽ (2018)",
   thumb: "/images/aircraft/su-57-felon/su57-zhuhai-2024.jpg",
   thumbAlt: "Sukhoi Su-57 Felon in dimostrazione al salone di Zhuhai 2024",
   model3d: "/models/RUS/sukhoi_su-57_felon.glb",

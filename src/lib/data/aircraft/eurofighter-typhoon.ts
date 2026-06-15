@@ -11,7 +11,7 @@ export const eurofighterTyphoon: Aircraft = {
   service: "2003 – oggi",
   status: "in-servizio",
   topSpeed: "Mach 2",
-  unitCost: "≈ 90 mln € (Tranche 3A)",
+  unitCost: "≈ 90 mln € (2013)",
   thumb: "/images/aircraft/eurofighter-typhoon/typhoon-italian-af.jpg",
   thumbAlt: "Eurofighter Typhoon dell'Aeronautica Militare italiana in volo",
   model3d: "/models/EU/eurofighter_typhoon.glb",

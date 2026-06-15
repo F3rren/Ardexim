@@ -27,6 +27,7 @@ export default function AircraftCard({ a }: { a: Aircraft }) {
             variant={inService ? "cyan" : "danger"}
             dot
             live={inService}
+            solid
           />
         </span>
       </div>
