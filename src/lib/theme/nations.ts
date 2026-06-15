@@ -40,6 +40,16 @@ const EUROPA: NationTheme = {
   },
 };
 
+// Francia (Dassault Rafale): blu reale/indaco, distinto dall'azzurro "Europa"
+const FRANCIA: NationTheme = {
+  label: "Francia",
+  vars: {
+    "--color-gold": "#4257d6", // blu reale/indaco (accento primario)
+    "--color-goldbr": "#8090ff", // pervinca brillante
+    "--color-cyan": "#4ec9c4", // teal (accento secondario)
+  },
+};
+
 const DEFAULT = USA;
 
 // chiave = campo aircraft.country
@@ -47,6 +57,7 @@ const byCountry: Record<string, NationTheme> = {
   USA: USA,
   Russia: RUSSIA,
   Europa: EUROPA,
+  Francia: FRANCIA,
 };
 
 export function nationTheme(country: string): NationTheme {

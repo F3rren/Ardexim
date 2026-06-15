@@ -71,6 +71,9 @@ Fotografie storiche via Wikimedia Commons:
   e shot in volo — *U.S. Air Force*, **pubblico dominio**; F-16I «Sufa» israeliano (2016) — *Israeli Air Force*, **CC BY 4.0**.
 - **B-2 Spirit**: in volo, test su Edwards, rifornimento in volo, decollo e operazione «Midnight Hammer» (2025) —
   *U.S. Air Force*, **pubblico dominio**.
+- **Dassault Rafale**: Rafale M in volo e lancio da portaerei — *U.S. Navy*, **pubblico dominio**; dimostratore Rafale A
+  a Farnborough (1986) — *Dick Gilbert*, **CC BY 2.0**; Rafale in volo — *Clemens Vasters*, **CC BY 2.0**;
+  Rafale C al Paris Air Show 2025 — *Kilyann Le Hen*, **CC BY 4.0**.
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -92,6 +95,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **F-16 Fighting Falcon** — «[F-16 Fighting Falcon - Fighter Jet - Free](https://sketchfab.com/3d-models/f-16-fighting-falcon-fighter-jet-free-f0b00989e5634764848ef2c235c64db5)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **B-2 Spirit** — «[Northrop Grumman B-2 Spirit - FREE](https://sketchfab.com/3d-models/northrop-grumman-b-2-spirit-free-9cd6b00813c04401a5427ae71b7a0cdc)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **Dassault Rafale (M)** — «[Dassault Rafale (M) - Fighter Jet - Free](https://sketchfab.com/3d-models/dassault-rafale-m-fighter-jet-free-0abf2465adb04bc8bc638688fa54ce21)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.

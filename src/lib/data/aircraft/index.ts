@@ -5,6 +5,7 @@ import { su57Felon } from "./su-57-felon";
 import { eurofighterTyphoon } from "./eurofighter-typhoon";
 import { f16FightingFalcon } from "./f-16-fighting-falcon";
 import { b2Spirit } from "./b-2-spirit";
+import { dassaultRafale } from "./dassault-rafale";
 
 // Registro degli aerei: singola fonte di verità.
 // Aggiungere un aereo = importare il suo file e aggiungerlo qui.
@@ -15,6 +16,7 @@ export const aircraft: Aircraft[] = [
   eurofighterTyphoon,
   f16FightingFalcon,
   b2Spirit,
+  dassaultRafale,
 ];
 
 export function getAircraftBySlug(slug: string): Aircraft | undefined {
