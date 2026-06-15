@@ -52,7 +52,11 @@ pubblica su GitHub Pages. `basePath`/`assetPrefix` valgono `/f14-tomcat` solo in
 
 ## Crediti immagini
 
-Fotografie storiche: **U.S. Navy, pubblico dominio**, via Wikimedia Commons.
+Fotografie storiche via Wikimedia Commons:
+- **U.S. Navy / U.S. Government — pubblico dominio**: F-111B (1965), prototipi YF-14A (~1972),
+  F-14D sul Golfo Persico (2005), F-14A del VF-84 «Jolly Rogers» (1986).
+- **F-14 iraniano a Mehrabad (2013)** — foto di **Mohammad Shaltouki**, licenza **CC BY 4.0**.
+
 Fonti dati: [Wikipedia](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [aereimilitari.org](https://www.aereimilitari.org/Aerei/F-14.htm).
 
