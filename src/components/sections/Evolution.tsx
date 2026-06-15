@@ -71,7 +71,7 @@ export default function Evolution({ aircraft }: { aircraft: Aircraft }) {
           <div className="absolute left-[7px] top-1.5 bottom-1.5 w-0.5 bg-gradient-to-b from-gold to-line" />
           {aircraft.timeline.map((t, i) => (
             <Reveal key={i}>
-              <div className="relative pb-12 last:pb-0 pl-1.5">
+              <div className={`relative last:pb-0 pl-1.5 ${t.media ? "pb-12" : "pb-[72px]"}`}>
                 <span className="absolute left-[-34px] top-1 w-4 h-4 rounded-full bg-bg border-[3px] border-gold" />
                 {t.media ? (
                   <div className="grid lg:grid-cols-2 gap-8 items-center">
