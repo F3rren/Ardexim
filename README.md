@@ -64,6 +64,14 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
 [aereimilitari.org](https://www.aereimilitari.org/Aerei/F-14.htm).
 
+## Crediti modelli 3D
+
+- **F-15E Strike Eagle** — «[F-15E Strike Eagle - Fighter Jet - Free](https://sketchfab.com/3d-models/f-15e-strike-eagle-fighter-jet-free-fff7d75490474e9b964d90cc031c8d01)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+
+> Nota licenza: il modello dell'F-15E è **non commerciale (NC)** e **ShareAlike (SA)**.
+> Questo progetto resta gratuito e a scopo divulgativo (uso non commerciale).
+
 ## Licenza
 
 Codice: MIT. Immagini: pubblico dominio (U.S. Navy). Contenuti a scopo divulgativo.

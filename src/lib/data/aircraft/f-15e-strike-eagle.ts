@@ -14,7 +14,11 @@ export const f15eStrikeEagle: Aircraft = {
   thumb: "/images/aircraft/f-15e-strike-eagle/f15e-banks-tanker.jpg",
   thumbAlt: "F-15E Strike Eagle vira allontanandosi da un'aerocisterna",
   model3d: "/models/f-15e_strike_eagle.glb",
-  // model3dCredit: { author: "—", url: "—", license: "—" },
+  model3dCredit: {
+    author: "bohmerang",
+    url: "https://sketchfab.com/3d-models/f-15e-strike-eagle-fighter-jet-free-fff7d75490474e9b964d90cc031c8d01",
+    license: "CC BY-NC-SA 4.0",
+  },
 
   // ---- dettaglio ----
   summary:
