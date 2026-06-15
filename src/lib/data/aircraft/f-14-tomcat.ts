@@ -23,7 +23,7 @@ export const f14Tomcat: Aircraft = {
     "Caccia da superiorità aerea imbarcato, biposto e supersonico, dotato di ali a geometria variabile e del leggendario sistema radar/missile AWG-9 / AIM-54 Phoenix. Per oltre tre decenni, lo scudo della flotta americana.",
 
   heroBadges: [
-    { label: "In servizio 1974–2006", variant: "cyan", dot: true, live: true },
+    { label: "Ritirato · 1974–2006", variant: "danger", dot: true },
     { label: "Ruolo · Superiorità aerea" },
     { label: "Origine · USA" },
     { label: "Mach 2.34", variant: "gold" },
@@ -33,12 +33,6 @@ export const f14Tomcat: Aircraft = {
     "Nato dal programma VFX dopo il fallimento dell'F-111B, il progetto Grumman G-303 fu selezionato nel gennaio 1969. Il Tomcat unisce raggio d'azione, sensori e potenza di fuoco in una piattaforma pensata per intercettare le minacce a centinaia di chilometri dalla portaerei. Circa il 25% della struttura è in titanio: un esemplare riuscì ad atterrare dopo aver perso oltre metà di un'ala in collisione.",
   armamentText:
     "Fino a 6.600 kg di carico bellico su 10 punti d'aggancio, dal duello ravvicinato all'intercettazione oltre l'orizzonte visivo.",
-  stats: [
-    { value: 2485, label: "Vel. max km/h" },
-    { value: 2.34, decimals: 2, label: "Mach (a quota)" },
-    { value: 6, label: "Phoenix a bordo" },
-    { value: 712, label: "Esemplari costruiti" },
-  ],
 
   bento: [
     {
@@ -152,10 +146,10 @@ export const f14Tomcat: Aircraft = {
   ],
 
   armament: [
-    { kind: "Cannone", title: "M61A1 Vulcan", text: "Rotativa a 6 canne da 20 mm, 6.000 colpi/min per il combattimento ravvicinato." },
-    { kind: "Lungo raggio", title: "AIM-54 Phoenix", text: "Fino a 6 missili, raggio oltre 160 km, guida radar attiva terminale." },
-    { kind: "Medio raggio", title: "AIM-7 Sparrow", text: "Missile a guida radar semiattiva per ingaggi BVR a media distanza." },
-    { kind: "Corto raggio", title: "AIM-9 Sidewinder", text: "Cercatore a infrarossi per il dogfight ad alta manovrabilità." },
+    { kind: "Cannone", title: "M61A1 Vulcan", text: "Rotativa a 6 canne da 20 mm, 6.000 colpi/min per il combattimento ravvicinato.", reach: "~2 km", rangePct: 6 },
+    { kind: "Corto raggio", title: "AIM-9 Sidewinder", text: "Cercatore a infrarossi per il dogfight ad alta manovrabilità.", reach: "~18 km", rangePct: 18 },
+    { kind: "Medio raggio", title: "AIM-7 Sparrow", text: "Missile a guida radar semiattiva per ingaggi BVR a media distanza.", reach: "~70 km", rangePct: 45 },
+    { kind: "Lungo raggio", title: "AIM-54 Phoenix", text: "Fino a 6 missili, guida radar attiva terminale: il missile aria-aria a più lunga gittata del suo tempo.", reach: "160+ km", rangePct: 100 },
   ],
 
   variants: [
@@ -181,11 +175,26 @@ export const f14Tomcat: Aircraft = {
   ],
 
   facts: [
-    { label: "Soprannome · «Turkey»" },
-    { label: "Nome · da «Tom's Cat» (amm. Connolly)", variant: "gold" },
-    { label: "Costo unitario · ~38 M$ (1998)" },
-    { label: "Film · Top Gun (1986 / 2022)" },
-    { label: "TF30 · 28% degli incidenti", variant: "cyan" },
+    {
+      title: "Perché si chiama «Tomcat»",
+      text: "Il nome unisce la tradizione Grumman dei felini all'omaggio all'ammiraglio Thomas «Tom» Connolly, grande sostenitore del programma: gli addetti ai lavori lo chiamavano scherzosamente «Tom's Cat».",
+    },
+    {
+      title: "Il soprannome «Turkey»",
+      text: "Gli equipaggi lo chiamavano affettuosamente «tacchino»: a bassa velocità, con ali, slat, flap e superfici mobili tutte estese, il profilo goffo e impennato ricordava proprio un tacchino.",
+    },
+    {
+      title: "Costoso ma insostituibile",
+      text: "Un F-14 costava circa 38 milioni di dollari (1998): un prezzo elevato giustificato dall'unica combinazione radar AWG-9 + missili Phoenix capace di difendere la flotta a oltre 150 km.",
+    },
+    {
+      title: "I motori, il suo tallone d'Achille",
+      text: "I primi turbofan Pratt & Whitney TF30 erano inclini allo stallo del compressore ad alti angoli d'attacco: vennero attribuiti a essi circa il 28% di tutti gli incidenti, fino alla sostituzione con i GE F110.",
+    },
+    {
+      title: "Una star del cinema",
+      text: "Top Gun (1986) ne fece un'icona globale e un potente strumento di reclutamento per la Marina; il sequel Top Gun: Maverick (2022) lo ha riportato sul grande schermo a sedici anni dal ritiro.",
+    },
   ],
 
 };

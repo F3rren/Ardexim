@@ -1,7 +1,6 @@
 import type { Aircraft } from "@/lib/data/aircraft/types";
 import Reveal from "@/components/ui/Reveal";
 import Badge from "@/components/ui/Badge";
-import CountUp from "@/components/ui/CountUp";
 import Icon from "@/components/ui/Icon";
 import HeroModel from "@/components/sections/HeroModel";
 
@@ -24,12 +23,6 @@ export default function Hero({ aircraft }: { aircraft: Aircraft }) {
               "linear-gradient(to top, var(--color-bg) 1%, transparent 46%), linear-gradient(to right, rgba(10,9,8,0.72), transparent 58%)",
           }}
         />
-
-        {/* hint d'uso */}
-        <span className="absolute bottom-5 right-5 z-[2] flex items-center gap-2 font-mono text-[11px] tracking-[0.1em] uppercase text-muted2 pointer-events-none">
-          <Icon name="rotate" className="w-4 h-4" strokeWidth={1.6} />
-          Trascina per ruotare
-        </span>
 
         {/* contenuto testuale (drag passa attraverso, tranne i bottoni) */}
         <div className="absolute inset-0 z-[2] pointer-events-none">
@@ -82,32 +75,16 @@ export default function Hero({ aircraft }: { aircraft: Aircraft }) {
         </div>
       </div>
 
-      {/* striscia statistiche */}
-      <div className="relative z-[3] mx-auto max-w-[1180px] px-6">
-        <Reveal>
-          <div className="grid grid-cols-2 sm:grid-cols-4 border border-line rounded-[14px] bg-gradient-to-b from-panel to-bg2 overflow-hidden">
-            {aircraft.stats.map((s, i) => (
-              <div
-                key={i}
-                className="px-[22px] py-[26px] border-line-soft [&:not(:last-child)]:border-r max-sm:[&:nth-child(2)]:border-r-0"
-              >
-                <div className="font-display font-bold text-goldbr leading-none text-[clamp(2rem,4.5vw,3.1rem)]">
-                  <CountUp value={s.value} decimals={s.decimals} suffix={s.suffix} />
-                </div>
-                <div className="font-mono text-xs tracking-[0.14em] uppercase text-muted mt-2">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </Reveal>
-        {credit && (
-          <p className="mt-3 font-mono text-[11px] text-muted2">
+      {credit && (
+        <div className="relative z-[3] mx-auto max-w-[1180px] px-6">
+          <p className="mt-4 font-mono text-[11px] text-muted2">
             Modello 3D: «{credit.author}» — {credit.license} ·{" "}
             <a className="underline hover:text-goldbr" href={credit.url} target="_blank" rel="noopener noreferrer">
               fonte
             </a>
           </p>
-        )}
-      </div>
+        </div>
+      )}
     </header>
   );
 }

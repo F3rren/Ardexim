@@ -22,8 +22,8 @@ export default function AircraftCard({ a }: { a: Aircraft }) {
         <span className="absolute top-3 left-3">
           <Badge
             label={inService ? "In servizio" : "Ritirato"}
-            variant={inService ? "cyan" : "default"}
-            dot={inService}
+            variant={inService ? "cyan" : "danger"}
+            dot
             live={inService}
           />
         </span>

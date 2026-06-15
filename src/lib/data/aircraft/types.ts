@@ -2,20 +2,13 @@
 // Un Aircraft è la singola fonte di verità: alimenta sia la card del catalogo
 // sia tutte le sezioni della pagina dettaglio.
 
-export type BadgeVariant = "default" | "gold" | "cyan";
+export type BadgeVariant = "default" | "gold" | "cyan" | "danger";
 
 export interface BadgeData {
   label: string;
   variant?: BadgeVariant;
   dot?: boolean; // mostra un pallino
   live?: boolean; // pallino pulsante (stato "operativo")
-}
-
-export interface Stat {
-  value: number;
-  decimals?: number;
-  suffix?: string;
-  label: string;
 }
 
 export interface Feature {
@@ -45,6 +38,13 @@ export interface SystemCard {
 
 export interface ArmCard {
   kind: string;
+  title: string;
+  text: string;
+  reach: string; // gittata leggibile, es. "150+ km"
+  rangePct: number; // 0-100, per la barra della gittata
+}
+
+export interface FactItem {
   title: string;
   text: string;
 }
@@ -91,13 +91,12 @@ export interface Aircraft {
   overviewText?: string;
   armamentText?: string;
   bento: Feature[];
-  stats: Stat[];
   specs: SpecBlock[];
   systems: SystemCard[];
   armament: ArmCard[];
   variants: VariantCard[];
   timeline: TimelineItem[];
-  facts: BadgeData[];
+  facts: FactItem[];
   model3d?: string; // percorso al file GLB in /public (es. /models/f-14-tomcat.glb)
   model3dCredit?: { author: string; url: string; license: string };
 }

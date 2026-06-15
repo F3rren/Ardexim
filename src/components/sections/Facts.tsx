@@ -1,7 +1,6 @@
 import type { Aircraft } from "@/lib/data/aircraft/types";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Reveal from "@/components/ui/Reveal";
-import Badge from "@/components/ui/Badge";
 
 export default function Facts({ aircraft }: { aircraft: Aircraft }) {
   return (
@@ -10,15 +9,17 @@ export default function Facts({ aircraft }: { aircraft: Aircraft }) {
         <Reveal>
           <SectionHeader eyebrow="Dati utili · in breve" title="Lo sapevi?" />
         </Reveal>
-        <Reveal>
-          <div className="border border-line rounded-[14px] bg-panel p-8">
-            <div className="flex flex-wrap gap-2.5">
-              {aircraft.facts.map((b, i) => (
-                <Badge key={i} {...b} />
-              ))}
-            </div>
-          </div>
-        </Reveal>
+
+        <div className="grid md:grid-cols-2 gap-x-12 gap-y-7">
+          {aircraft.facts.map((f, i) => (
+            <Reveal key={i}>
+              <div className="border-l-2 border-gold/60 pl-5">
+                <h3 className="font-display font-semibold uppercase text-[1.1rem] text-goldbr">{f.title}</h3>
+                <p className="text-muted text-[0.95rem] mt-1.5 leading-relaxed">{f.text}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

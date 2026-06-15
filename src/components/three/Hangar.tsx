@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Bounds, Center } from "@react-three/drei";
 import { useReducedMotion } from "framer-motion";
@@ -15,7 +15,6 @@ export default function Hangar({
   onError: () => void;
 }) {
   const reduce = useReducedMotion();
-  const [auto, setAuto] = useState(true);
 
   return (
     <Canvas camera={{ position: [4, 2.4, 5], fov: 42 }} dpr={[1, 2]} gl={{ antialias: true, alpha: true }}>
@@ -26,8 +25,8 @@ export default function Hangar({
 
       <Suspense fallback={null}>
         <ModelErrorBoundary onError={onError}>
-          {/* auto-centratura + auto-fit della camera per modelli di scala ignota */}
-          <Bounds fit clip observe margin={1.05}>
+          {/* margine ampio: il modello non viene mai tagliato durante la rotazione */}
+          <Bounds fit clip margin={1.3}>
             <Center>
               <GltfModel url={modelUrl} />
             </Center>
@@ -35,14 +34,15 @@ export default function Hangar({
         </ModelErrorBoundary>
       </Suspense>
 
+      {/* solo auto-rotazione: nessuna interazione dell'utente */}
       <OrbitControls
         makeDefault
+        enableRotate={false}
+        enableZoom={false}
         enablePan={false}
-        enableDamping
-        dampingFactor={0.08}
-        autoRotate={auto && !reduce}
+        enableDamping={false}
+        autoRotate={!reduce}
         autoRotateSpeed={0.9}
-        onStart={() => setAuto(false)}
       />
     </Canvas>
   );
