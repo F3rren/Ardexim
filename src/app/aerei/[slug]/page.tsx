@@ -4,7 +4,6 @@ import { getAircraftBySlug, getAllSlugs } from "@/lib/data/aircraft";
 import Navbar, { type NavSection } from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Overview from "@/components/sections/Overview";
-import ModelViewer from "@/components/sections/ModelViewer";
 import Specs from "@/components/sections/Specs";
 import Systems from "@/components/sections/Systems";
 import Armament from "@/components/sections/Armament";
@@ -46,7 +45,6 @@ export default async function AircraftPage({
 
   const sections: NavSection[] = [
     { id: "overview", label: "Overview" },
-    ...(a.model3d ? [{ id: "model", label: "Modello 3D" }] : []),
     { id: "specs", label: "Specifiche" },
     { id: "systems", label: "Sistemi" },
     { id: "armament", label: "Armi" },
@@ -62,7 +60,6 @@ export default async function AircraftPage({
       <main>
         <Hero aircraft={a} />
         <Overview aircraft={a} />
-        {a.model3d && <ModelViewer modelUrl={a.model3d} credit={a.model3dCredit} />}
         <Specs aircraft={a} />
         <Systems aircraft={a} />
         <Armament aircraft={a} />
