@@ -10,9 +10,11 @@ import ModelErrorBoundary from "./ModelErrorBoundary";
 export default function Hangar({
   modelUrl,
   onError,
+  onReady,
 }: {
   modelUrl: string;
   onError: () => void;
+  onReady?: () => void;
 }) {
   const reduce = useReducedMotion();
 
@@ -28,7 +30,7 @@ export default function Hangar({
           {/* margine ampio: il modello non viene mai tagliato durante la rotazione */}
           <Bounds fit clip margin={1.3}>
             <Center>
-              <GltfModel url={modelUrl} />
+              <GltfModel url={modelUrl} onReady={onReady} />
             </Center>
           </Bounds>
         </ModelErrorBoundary>
@@ -36,7 +38,6 @@ export default function Hangar({
 
       {/* solo auto-rotazione: nessuna interazione dell'utente */}
       <OrbitControls
-        // enabled={false} 
         makeDefault
         enableRotate={false}
         enableZoom={false}

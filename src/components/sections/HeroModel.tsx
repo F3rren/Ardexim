@@ -1,16 +1,27 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { asset } from "@/lib/basePath";
 
 const Hangar = dynamic(() => import("@/components/three/Hangar"), {
   ssr: false,
-  // nessuna anteprima/placeholder: il modello compare direttamente appena pronto
+  // nessuna anteprima testuale: durante il caricamento resta visibile il poster statico
   loading: () => null,
 });
 
-export default function HeroModel({ modelUrl }: { modelUrl?: string }) {
+export default function HeroModel({
+  modelUrl,
+  poster,
+  posterAlt,
+}: {
+  modelUrl?: string;
+  poster: string;
+  posterAlt: string;
+}) {
   const [failed, setFailed] = useState(false);
+  const [ready, setReady] = useState(false);
+  const handleReady = useCallback(() => setReady(true), []);
 
   if (!modelUrl || failed) {
     return (
@@ -29,9 +40,22 @@ export default function HeroModel({ modelUrl }: { modelUrl?: string }) {
   }
 
   return (
-    // su desktop sposta il modello a destra per non sovrapporlo al titolo
-    <div className="absolute inset-0 lg:translate-x-[9%]">
-      <Hangar modelUrl={modelUrl} onError={() => setFailed(true)} />
-    </div>
+    <>
+      {/* poster statico (foto del velivolo) mostrato finché il modello 3D non è pronto */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={asset(poster)}
+        alt={posterAlt}
+        aria-hidden={ready}
+        className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
+          ready ? "opacity-0" : "opacity-100"
+        }`}
+      />
+
+      {/* su desktop sposta il modello a destra per non sovrapporlo al titolo */}
+      <div className="absolute inset-0 lg:translate-x-[9%]">
+        <Hangar modelUrl={modelUrl} onError={() => setFailed(true)} onReady={handleReady} />
+      </div>
+    </>
   );
 }

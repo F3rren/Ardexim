@@ -12,7 +12,7 @@ export default function Hero({ aircraft }: { aircraft: Aircraft }) {
     <header id="top" className="relative">
       {/* palco 3D a tutta larghezza con testo in overlay */}
       <div className="relative w-full h-[clamp(560px,88vh,980px)]">
-        <HeroModel modelUrl={aircraft.model3d} />
+        <HeroModel modelUrl={aircraft.model3d} poster={aircraft.thumb} posterAlt={aircraft.thumbAlt} />
 
         {/* scrim per leggibilità del testo */}
         <div
