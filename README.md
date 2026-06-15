@@ -71,8 +71,8 @@ Fotografie storiche via Wikimedia Commons:
   e shot in volo — *U.S. Air Force*, **pubblico dominio**; F-16I «Sufa» israeliano (2016) — *Israeli Air Force*, **CC BY 4.0**.
 - **B-2 Spirit**: in volo, test su Edwards, rifornimento in volo, decollo e operazione «Midnight Hammer» (2025) —
   *U.S. Air Force*, **pubblico dominio**.
-- **Dassault Rafale**: Rafale M in volo e lancio da portaerei — *U.S. Navy*, **pubblico dominio**; dimostratore Rafale A
-  a Farnborough (1986) — *Dick Gilbert*, **CC BY 2.0**; Rafale in volo — *Clemens Vasters*, **CC BY 2.0**;
+- **Dassault Rafale**: Rafale in volo — *Clemens Vasters*, **CC BY 2.0**; dimostratore Rafale A a Farnborough (1986) —
+  *Dick Gilbert*, **CC BY 2.0**; lancio del Rafale M da portaerei — *U.S. Navy*, **pubblico dominio**;
   Rafale C al Paris Air Show 2025 — *Kilyann Le Hen*, **CC BY 4.0**.
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),

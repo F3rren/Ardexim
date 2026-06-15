@@ -12,8 +12,8 @@ export const dassaultRafale: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 1.8",
   unitCost: "≈ 70 mln € (2013)",
-  thumb: "/images/aircraft/dassault-rafale/rafale-m-flight.jpg",
-  thumbAlt: "Dassault Rafale M dell'Aéronavale francese in volo",
+  thumb: "/images/aircraft/dassault-rafale/rafale-flight.jpg",
+  thumbAlt: "Dassault Rafale in volo",
   model3d: "/models/EU/dassault_rafale.glb",
   model3dCredit: {
     author: "bohmerang",
@@ -128,14 +128,14 @@ export const dassaultRafale: Aircraft = {
       icon: "plane",
       badge: { label: "Aerodinamica", variant: "cyan" },
       title: "Cellula delta-canard + FBW",
-      text: "Ala a delta con canard ravvicinati e comandi fly-by-wire digitali: instabilità controllata per la massima agilità e ottime prestazioni a ogni velocità, fino all'appontaggio nella versione M.",
+      text: "Ala a delta con canard ravvicinati e comandi fly-by-wire digitali: instabilità controllata per la massima agilità e ottime prestazioni in tutto l'inviluppo di volo, dalla bassa quota al supersonico.",
       meta: { k: "Comandi", v: "FBW digitale" },
     },
     {
       icon: "engine",
       badge: { label: "Propulsione", variant: "gold" },
       title: "2× Safran M88-2",
-      text: "Due turbofan con postbruciatore interamente francesi: efficienti, robusti e capaci della spinta necessaria anche per il decollo a catapulta dal ponte della portaerei Charles de Gaulle.",
+      text: "Due turbofan con postbruciatore interamente francesi: efficienti, robusti e capaci della spinta necessaria per il decollo a pieno carico e per l'impiego imbarcato.",
       meta: { k: "Spinta A/B cad.", v: "~75 kN" },
     },
     {
@@ -158,7 +158,7 @@ export const dassaultRafale: Aircraft = {
   variants: [
     { sub: "// Caccia", code: "Rafale C", text: "Monoposto da combattimento dell'Armée de l'air: la versione terrestre monoposto, la più diffusa nella flotta francese." },
     { sub: "// Biposto", code: "Rafale B", text: "Versione biposto dell'Aeronautica per addestramento e missioni complesse, inclusa la missione nucleare con due membri d'equipaggio." },
-    { sub: "// Navale", code: "Rafale M", text: "Versione imbarcata per la portaerei Charles de Gaulle: carrello rinforzato e gancio d'arresto. È il caccia non statunitense ad aver operato da portaerei della US Navy in prove congiunte." },
+    { sub: "// Navale", code: "Rafale M", text: "Versione imbarcata per la portaerei Charles de Gaulle, con carrello rinforzato e gancio d'arresto per catapulta e appontaggio." },
     { sub: "// Standard", code: "F3-R / F4", text: "Gli aggiornamenti incrementali: l'F3-R integra il missile Meteor, l'F4 (dal 2023) porta nuovi sensori, connettività e armi di ultima generazione." },
     { sub: "// Export", code: "Clienti esteri", text: "Egitto, Qatar, India, Grecia, Croazia, Emirati, Indonesia e Serbia: negli anni 2020 il Rafale è diventato un grande successo all'esportazione." },
     { sub: "// Futuro", code: "Standard F5", text: "Il prossimo standard, atteso verso il 2030, porterà nuove armi, guerra elettronica avanzata e l'impiego in coppia con droni gregari." },
@@ -170,7 +170,7 @@ export const dassaultRafale: Aircraft = {
     { year: "1991", tag: { label: "Serie" }, title: "Il primo Rafale di produzione", text: "Il 19 maggio 1991 vola il primo Rafale C di serie. Lo sviluppo è lungo e curato: il caccia deve poter sostituire da solo numerosi tipi diversi in servizio nelle forze francesi, dalla difesa aerea all'attacco." },
     { year: "2001", tag: { label: "In servizio", variant: "cyan" }, title: "Entrata in servizio nella Marina", text: "Il Rafale M entra in linea con l'Aéronavale francese e diventa operativo sulla portaerei a propulsione nucleare Charles de Gaulle: è il primo caccia europeo di nuova generazione imbarcato.", media: { src: "/images/aircraft/dassault-rafale/rafale-m-carrier.jpg", width: 1280, height: 755, alt: "Un Rafale M della Marina francese al lancio da una portaerei", caption: "Rafale M al lancio da portaerei · U.S. Navy (PD)" } },
     { year: "2006", tag: { label: "Aeronautica", variant: "cyan" }, title: "L'Armée de l'air operativa", text: "Nel 2006 anche l'Aeronautica francese dichiara operativo il Rafale, che inizia a sostituire una pletora di velivoli più vecchi (Mirage F1, Jaguar, Mirage 2000 in alcuni ruoli e i Crusader navali già ritirati)." },
-    { year: "2011–14", tag: { label: "Operazioni", variant: "gold" }, title: "Libia, Mali e contro l'ISIS", text: "Il Rafale dà prova della sua filosofia «omnirole»: apre la campagna sulla Libia nel 2011, interviene in Mali nel 2013 (operazione Serval) e colpisce lo Stato Islamico in Iraq e Siria dal 2014, alternando ricognizione, difesa aerea e attacco di precisione.", media: { src: "/images/aircraft/dassault-rafale/rafale-flight.jpg", width: 1280, height: 808, alt: "Un Dassault Rafale in volo", caption: "Dassault Rafale in volo · Clemens Vasters (CC BY 2.0)" } },
+    { year: "2011–14", tag: { label: "Operazioni", variant: "gold" }, title: "Libia, Mali e contro l'ISIS", text: "Il Rafale dà prova della sua filosofia «omnirole»: apre la campagna sulla Libia nel 2011, interviene in Mali nel 2013 (operazione Serval) e colpisce lo Stato Islamico in Iraq e Siria dal 2014, alternando ricognizione, difesa aerea e attacco di precisione." },
     { year: "2015", tag: { label: "Export", variant: "cyan" }, title: "Il successo all'esportazione", text: "L'Egitto diventa nel 2015 il primo cliente estero, aprendo una lunga serie di contratti: Qatar, India, Grecia, Croazia, Emirati Arabi, Indonesia e Serbia scelgono il Rafale, consacrandolo come uno dei caccia di maggior successo del decennio.", media: { src: "/images/aircraft/dassault-rafale/rafale-c-2025.jpg", width: 1280, height: 720, alt: "Un Dassault Rafale C al Paris Air Show 2025", caption: "Rafale C · Paris Air Show 2025 · Kilyann Le Hen (CC BY 4.0)" } },
     { year: "F3-R / F4", tag: { label: "Evoluzione", variant: "gold" }, title: "Meteor, AESA e standard F4", text: "Gli standard successivi potenziano il caccia: lo standard F3-R integra il missile a lunghissima gittata Meteor e nuovi pod, mentre l'F4 (dal 2023) porta connettività avanzata, nuovi sensori e armamento di ultima generazione." },
     { year: "Deterrenza", tag: { label: "Nucleare" }, title: "La componente aerea della force de frappe", text: "Con il missile nucleare ASMP-A il Rafale assolve un ruolo strategico unico tra i caccia europei: è uno dei pilastri della deterrenza nazionale francese, accanto ai sottomarini lanciamissili." },
@@ -191,8 +191,8 @@ export const dassaultRafale: Aircraft = {
       text: "Cellula, motori Safran M88, radar Thales, missili MBDA: il Rafale è uno dei pochi caccia al mondo realizzato quasi interamente dall'industria di un solo Paese, scelta che garantisce piena indipendenza operativa.",
     },
     {
-      title: "Anche dalle portaerei americane",
-      text: "Grazie alla versione navale M, il Rafale è uno dei rari caccia non statunitensi ad aver operato da catapulta e gancio d'arresto su portaerei della US Navy durante esercitazioni congiunte.",
+      title: "Raid a lunghissimo raggio",
+      text: "Il Rafale ha condotto alcune delle missioni d'attacco più lunghe della sua categoria, decollando dalla Francia metropolitana e colpendo obiettivi in Africa o Medio Oriente con il supporto di più rifornimenti in volo.",
     },
     {
       title: "Esplosione di vendite negli anni 2020",
