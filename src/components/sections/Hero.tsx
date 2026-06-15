@@ -25,11 +25,7 @@ export default function Hero({ aircraft }: { aircraft: Aircraft }) {
           }}
         />
 
-        {/* telemetria + hint */}
-        <span className="absolute top-[104px] right-5 z-[2] text-right font-mono text-[11px] tracking-[0.1em] uppercase text-cyan/80 pointer-events-none">
-          <span className="block text-muted">VELOCITÀ MAX</span>
-          {aircraft.topSpeed.toUpperCase()}
-        </span>
+        {/* hint d'uso */}
         <span className="absolute bottom-5 right-5 z-[2] flex items-center gap-2 font-mono text-[11px] tracking-[0.1em] uppercase text-muted2 pointer-events-none">
           <Icon name="rotate" className="w-4 h-4" strokeWidth={1.6} />
           Trascina per ruotare
