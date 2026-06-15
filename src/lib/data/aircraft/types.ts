@@ -2,20 +2,13 @@
 // Un Aircraft è la singola fonte di verità: alimenta sia la card del catalogo
 // sia tutte le sezioni della pagina dettaglio.
 
-export type BadgeVariant = "default" | "gold" | "cyan";
+export type BadgeVariant = "default" | "gold" | "cyan" | "danger";
 
 export interface BadgeData {
   label: string;
   variant?: BadgeVariant;
   dot?: boolean; // mostra un pallino
   live?: boolean; // pallino pulsante (stato "operativo")
-}
-
-export interface Stat {
-  value: number;
-  decimals?: number;
-  suffix?: string;
-  label: string;
 }
 
 export interface Feature {
@@ -47,15 +40,13 @@ export interface ArmCard {
   kind: string;
   title: string;
   text: string;
+  reach: string; // gittata leggibile, es. "150+ km"
+  rangePct: number; // 0-100, per la barra della gittata
 }
 
-export interface OpCard {
-  icon: string;
-  year: string;
-  yearVariant?: BadgeVariant;
+export interface FactItem {
   title: string;
   text: string;
-  meta: { k: string; v: string };
 }
 
 export interface VariantCard {
@@ -64,23 +55,20 @@ export interface VariantCard {
   text: string;
 }
 
+export interface TimelineMedia {
+  src: string;
+  alt: string;
+  caption: string;
+  width: number;
+  height: number;
+}
+
 export interface TimelineItem {
   year: string;
   tag: BadgeData;
   title: string;
   text: string;
-}
-
-export interface Photo {
-  src: string;
-  alt: string;
-  caption: string;
-  year: string;
-  title: string;
-  text: string;
-  badges: BadgeData[];
-  width: number;
-  height: number;
+  media?: TimelineMedia; // foto storica opzionale per la tappa
 }
 
 export interface Aircraft {
@@ -102,17 +90,13 @@ export interface Aircraft {
   // intro testuali (specifiche dell'aereo) per alcune sezioni
   overviewText?: string;
   armamentText?: string;
-  operationsText?: string;
-  galleryText?: string;
   bento: Feature[];
-  stats: Stat[];
   specs: SpecBlock[];
   systems: SystemCard[];
   armament: ArmCard[];
-  operations: OpCard[];
   variants: VariantCard[];
   timeline: TimelineItem[];
-  facts: BadgeData[];
-  gallery: Photo[];
-  model3d?: string; // chiave nel registry dei modelli 3D
+  facts: FactItem[];
+  model3d?: string; // percorso al file GLB in /public (es. /models/f-14-tomcat.glb)
+  model3dCredit?: { author: string; url: string; license: string };
 }

@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
   },
   basePath: isProd ? `/${repo}` : undefined,
   assetPrefix: isProd ? `/${repo}` : undefined,
+  // Permette di aprire il dev server da altri dispositivi in LAN (solo sviluppo).
+  // Aggiungi qui altri IP/host se cambi rete.
+  allowedDevOrigins: ["192.168.178.146"],
 };
 
 export default nextConfig;

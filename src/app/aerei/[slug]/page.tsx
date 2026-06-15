@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAircraftBySlug, getAllSlugs } from "@/lib/data/aircraft";
+import { nationStyle } from "@/lib/theme/nations";
 import Navbar, { type NavSection } from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Overview from "@/components/sections/Overview";
-import WingGeometry from "@/components/sections/WingGeometry";
 import Specs from "@/components/sections/Specs";
 import Systems from "@/components/sections/Systems";
 import Armament from "@/components/sections/Armament";
-import Operations from "@/components/sections/Operations";
-import Gallery from "@/components/sections/Gallery";
-import History from "@/components/sections/History";
+import Evolution from "@/components/sections/Evolution";
 import Variants from "@/components/sections/Variants";
 import Facts from "@/components/sections/Facts";
 import FinalCta from "@/components/sections/FinalCta";
+import Credits from "@/components/sections/Credits";
 
 export const dynamicParams = false;
 
@@ -46,33 +45,30 @@ export default async function AircraftPage({
 
   const sections: NavSection[] = [
     { id: "overview", label: "Overview" },
-    ...(a.model3d ? [{ id: "model", label: "Modello 3D" }] : []),
     { id: "specs", label: "Specifiche" },
     { id: "systems", label: "Sistemi" },
     { id: "armament", label: "Armi" },
-    { id: "operations", label: "Impiego" },
-    ...(a.gallery.length > 0 ? [{ id: "gallery", label: "Galleria" }] : []),
-    { id: "history", label: "Storia" },
+    { id: "history", label: "Evoluzione" },
     { id: "variants", label: "Varianti" },
   ];
 
   return (
-    <>
+    // La palette accentata della nazione viene applicata via variabili CSS
+    // e si propaga in cascata a navbar e a tutte le sezioni della scheda.
+    <div style={nationStyle(a.country)}>
       <Navbar sections={sections} title={a.name} />
       <main>
         <Hero aircraft={a} />
         <Overview aircraft={a} />
-        {a.model3d && <WingGeometry model3d={a.model3d} />}
         <Specs aircraft={a} />
         <Systems aircraft={a} />
         <Armament aircraft={a} />
-        <Operations aircraft={a} />
-        <Gallery aircraft={a} />
-        <History aircraft={a} />
+        <Evolution aircraft={a} />
         <Variants aircraft={a} />
         <Facts aircraft={a} />
         <FinalCta aircraft={a} />
+        <Credits aircraft={a} />
       </main>
-    </>
+    </div>
   );
 }

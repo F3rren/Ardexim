@@ -15,25 +15,39 @@ export default function Systems({ aircraft }: { aircraft: Aircraft }) {
             text="I sottosistemi chiave che rendono questo velivolo una piattaforma di riferimento per la sua epoca."
           />
         </Reveal>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {aircraft.systems.map((s, i) => (
-            <Reveal key={i}>
-              <article className="h-full border border-line rounded-[14px] p-6 bg-gradient-to-b from-panel to-bg2 transition-colors hover:border-cyan/40">
-                <div className="flex items-center justify-between gap-3 mb-4">
-                  <div className="w-[42px] h-[42px] rounded-[11px] flex items-center justify-center bg-cyan/10 border border-cyan/20 text-cyan shrink-0">
-                    <Icon name={s.icon} className="w-[22px] h-[22px]" />
+
+        <Reveal>
+          <div className="border border-line rounded-[14px] bg-gradient-to-b from-panel to-bg2 overflow-hidden divide-y divide-line">
+            {aircraft.systems.map((s, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-5 p-6 transition-colors hover:bg-white/[0.025]"
+              >
+                <div className="w-12 h-12 rounded-[11px] bg-cyan/10 border border-cyan/20 text-cyan flex items-center justify-center shrink-0">
+                  <Icon name={s.icon} className="w-6 h-6" />
+                </div>
+
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <h3 className="font-display font-semibold uppercase text-[1.25rem]">{s.title}</h3>
+                    <Badge {...s.badge} />
                   </div>
-                  <Badge {...s.badge} />
+                  <p className="text-muted text-[0.95rem] mt-1.5 max-w-[62ch] leading-relaxed">{s.text}</p>
+                  {/* metrica inline su mobile */}
+                  <div className="md:hidden mt-3 pt-3 border-t border-dashed border-line-soft font-mono text-xs text-muted2">
+                    {s.meta.k}: <b className="text-goldbr font-normal">{s.meta.v}</b>
+                  </div>
                 </div>
-                <h3 className="font-display font-semibold uppercase text-[1.3rem] mb-1.5">{s.title}</h3>
-                <p className="text-muted text-[0.92rem] mb-4 leading-relaxed">{s.text}</p>
-                <div className="font-mono text-xs text-muted2 tracking-[0.06em] border-t border-dashed border-line-soft pt-[13px]">
-                  {s.meta.k}: <b className="text-goldbr font-normal">{s.meta.v}</b>
+
+                {/* metrica a destra su desktop */}
+                <div className="hidden md:block text-right shrink-0 w-[150px]">
+                  <div className="font-mono text-goldbr text-[1.05rem] leading-tight">{s.meta.v}</div>
+                  <div className="font-mono text-[11px] tracking-[0.12em] uppercase text-muted2 mt-1">{s.meta.k}</div>
                 </div>
-              </article>
-            </Reveal>
-          ))}
-        </div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </div>
     </section>
   );

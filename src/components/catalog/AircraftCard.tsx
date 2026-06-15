@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Aircraft } from "@/lib/data/aircraft/types";
 import { asset } from "@/lib/basePath";
+import { nationStyle } from "@/lib/theme/nations";
 import Badge from "@/components/ui/Badge";
 
 export default function AircraftCard({ a }: { a: Aircraft }) {
@@ -9,6 +10,7 @@ export default function AircraftCard({ a }: { a: Aircraft }) {
   return (
     <Link
       href={`/aerei/${a.slug}`}
+      style={nationStyle(a.country)}
       className="group block border border-line rounded-[14px] overflow-hidden bg-gradient-to-b from-panel to-bg2 hover:border-gold/55 transition-colors"
     >
       <div className="relative aspect-[16/10] overflow-hidden bg-panel2">
@@ -22,8 +24,8 @@ export default function AircraftCard({ a }: { a: Aircraft }) {
         <span className="absolute top-3 left-3">
           <Badge
             label={inService ? "In servizio" : "Ritirato"}
-            variant={inService ? "cyan" : "default"}
-            dot={inService}
+            variant={inService ? "cyan" : "danger"}
+            dot
             live={inService}
           />
         </span>

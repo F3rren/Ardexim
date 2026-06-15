@@ -37,13 +37,15 @@ src/
     data/aircraft/           # registro aerei (un file per aereo)
     store/                   # stato geometria alare
 public/images/aircraft/<slug>/   # immagini self-hostate
+public/models/<NAZIONE>/         # modelli 3D (GLB), una cartella per Stato (USA, RUS, …)
 ```
 
 ### Aggiungere un aereo
 
 1. Creare `src/lib/data/aircraft/<slug>.ts` con i dati (interfaccia `Aircraft`).
 2. Registrarlo in `src/lib/data/aircraft/index.ts`.
-3. (Opzionale) aggiungere un modello 3D in `src/components/three/models/` e mapparlo nel registry.
+3. (Opzionale) mettere il GLB in `public/models/<NAZIONE>/` e indicarne il percorso nel campo `model3d`.
+4. La palette colore segue il campo `country` (vedi `src/lib/theme/nations.ts`): aggiungere lì la nazione per un nuovo accento.
 
 ## Deploy
 
@@ -52,9 +54,33 @@ pubblica su GitHub Pages. `basePath`/`assetPrefix` valgono `/f14-tomcat` solo in
 
 ## Crediti immagini
 
-Fotografie storiche: **U.S. Navy, pubblico dominio**, via Wikimedia Commons.
-Fonti dati: [Wikipedia](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
+Fotografie storiche via Wikimedia Commons:
+- **F-14 Tomcat — U.S. Navy / U.S. Government, pubblico dominio**: F-111B (1965), prototipi YF-14A (~1972),
+  F-14D sul Golfo Persico (2005), F-14A del VF-84 «Jolly Rogers» (1986).
+- **F-14 iraniano a Mehrabad (2013)** — foto di **Mohammad Shaltouki**, licenza **CC BY 4.0**.
+- **F-15E Strike Eagle — U.S. Air Force, pubblico dominio**: vira da un'aerocisterna, decollo a pieno carico,
+  formazione di Desert Storm (1991), sui cieli dell'Afghanistan, in missione sull'Iraq (2004),
+  F-15EX Eagle II.
+- **Su-57 Felon**: T-50 «52» (2013) — *Alan Wilson*, **CC BY-SA 2.0**; T-50 al MAKS 2013 — *Doomych*,
+  **pubblico dominio**; Su-57 al forum Army-2022 — *Boevaya mashina*, **CC BY-SA 3.0**;
+  Su-57 al salone di Zhuhai 2024 — *N509FZ*, **CC BY-SA 4.0**.
+
+Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
+[Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
+[Wikipedia (Su-57)](https://en.wikipedia.org/wiki/Sukhoi_Su-57),
 [aereimilitari.org](https://www.aereimilitari.org/Aerei/F-14.htm).
+
+## Crediti modelli 3D
+
+- **F-14 Tomcat** — «[F-14 Tomcat - Fighter Jet - Free](https://sketchfab.com/3d-models/f-14-tomcat-fighter-jet-free-497f77c311b5411d9b567d8707a81c33)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **F-15E Strike Eagle** — «[F-15E Strike Eagle - Fighter Jet - Free](https://sketchfab.com/3d-models/f-15e-strike-eagle-fighter-jet-free-fff7d75490474e9b964d90cc031c8d01)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **Su-57 Felon** — «[Sukhoi Su-57 Felon - Fighter Jet - Free](https://sketchfab.com/3d-models/sukhoi-su-57-felon-fighter-jet-free-59995d6f34ba4bb7990195be3a745fc5)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+
+> Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.
+> Questo progetto resta gratuito e a scopo divulgativo (uso non commerciale).
 
 ## Licenza
 

@@ -9,14 +9,33 @@ export default function Armament({ aircraft }: { aircraft: Aircraft }) {
         <Reveal>
           <SectionHeader eyebrow="Sistema d'arma" title="Artigli" text={aircraft.armamentText} />
         </Reveal>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+        <div className="flex flex-col gap-3">
           {aircraft.armament.map((a, i) => (
             <Reveal key={i}>
-              <article className="h-full border border-line rounded-[14px] p-[22px] bg-panel">
-                <div className="font-mono text-xs tracking-[0.14em] uppercase text-cyan">{a.kind}</div>
-                <h3 className="font-display font-semibold uppercase text-[1.3rem] mt-2.5 mb-1.5">{a.title}</h3>
-                <p className="text-muted text-[0.92rem] leading-relaxed">{a.text}</p>
-              </article>
+              <div className="border border-line rounded-[14px] bg-panel p-5 lg:grid lg:grid-cols-[1fr_280px] lg:items-center lg:gap-8 transition-colors hover:border-gold/45">
+                <div>
+                  <div className="flex items-baseline gap-3 flex-wrap">
+                    <span className="font-mono text-[11px] tracking-[0.14em] uppercase text-cyan">{a.kind}</span>
+                    <h3 className="font-display font-semibold uppercase text-[1.3rem]">{a.title}</h3>
+                  </div>
+                  <p className="text-muted text-[0.92rem] mt-1.5 max-w-[62ch] leading-relaxed">{a.text}</p>
+                </div>
+
+                {/* barra della gittata */}
+                <div className="mt-4 lg:mt-0">
+                  <div className="flex items-center justify-between font-mono text-[11px] tracking-[0.1em] uppercase text-muted2 mb-1.5">
+                    <span>Gittata</span>
+                    <span className="text-goldbr">{a.reach}</span>
+                  </div>
+                  <div className="h-2 rounded-full bg-line overflow-hidden">
+                    <div
+                      className="h-full rounded-full bg-gradient-to-r from-gold to-goldbr"
+                      style={{ width: `${a.rangePct}%` }}
+                    />
+                  </div>
+                </div>
+              </div>
             </Reveal>
           ))}
         </div>

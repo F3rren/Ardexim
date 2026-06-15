@@ -13,14 +13,21 @@ export const f14Tomcat: Aircraft = {
   topSpeed: "Mach 2.34",
   thumb: "/images/aircraft/f-14-tomcat/f14d-2005.jpg",
   thumbAlt: "F-14D Tomcat in volo sul Golfo Persico",
-  model3d: "tomcat",
+  // Scarica un modello CC-BY da Sketchfab (glTF/GLB) e salvalo in
+  // public/models/f-14-tomcat.glb, poi compila model3dCredit qui sotto.
+  model3d: "/models/USA/f-14-tomcat.glb",
+  model3dCredit: {
+    author: "bohmerang",
+    url: "https://sketchfab.com/3d-models/f-14-tomcat-fighter-jet-free-497f77c311b5411d9b567d8707a81c33",
+    license: "CC BY-NC-SA 4.0",
+  },
 
   // ---- dettaglio ----
   summary:
     "Caccia da superiorità aerea imbarcato, biposto e supersonico, dotato di ali a geometria variabile e del leggendario sistema radar/missile AWG-9 / AIM-54 Phoenix. Per oltre tre decenni, lo scudo della flotta americana.",
 
   heroBadges: [
-    { label: "In servizio 1974–2006", variant: "cyan", dot: true, live: true },
+    { label: "Ritirato · 1974–2006", variant: "danger", dot: true },
     { label: "Ruolo · Superiorità aerea" },
     { label: "Origine · USA" },
     { label: "Mach 2.34", variant: "gold" },
@@ -30,17 +37,6 @@ export const f14Tomcat: Aircraft = {
     "Nato dal programma VFX dopo il fallimento dell'F-111B, il progetto Grumman G-303 fu selezionato nel gennaio 1969. Il Tomcat unisce raggio d'azione, sensori e potenza di fuoco in una piattaforma pensata per intercettare le minacce a centinaia di chilometri dalla portaerei. Circa il 25% della struttura è in titanio: un esemplare riuscì ad atterrare dopo aver perso oltre metà di un'ala in collisione.",
   armamentText:
     "Fino a 6.600 kg di carico bellico su 10 punti d'aggancio, dal duello ravvicinato all'intercettazione oltre l'orizzonte visivo.",
-  operationsText:
-    "Dalla copertura delle evacuazioni alle vittorie aria-aria sul Mediterraneo, fino al ruolo da cacciabombardiere «Bombcat»: mezzo secolo di operazioni reali.",
-  galleryText:
-    "Tre scatti dell'U.S. Navy (pubblico dominio) raccontano l'evoluzione del programma. Scorri per vedere le immagini muoversi.",
-
-  stats: [
-    { value: 2485, label: "Vel. max km/h" },
-    { value: 2.34, decimals: 2, label: "Mach (a quota)" },
-    { value: 6, label: "Phoenix a bordo" },
-    { value: 712, label: "Esemplari costruiti" },
-  ],
 
   bento: [
     {
@@ -131,13 +127,6 @@ export const f14Tomcat: Aircraft = {
       meta: { k: "Spinta A/B cad.", v: "~124 kN" },
     },
     {
-      icon: "cannon",
-      badge: { label: "Armamento interno", variant: "cyan" },
-      title: "Cannone M61A1 Vulcan",
-      text: "Rotativa Gatling a 6 canne integrata nella fusoliera per il combattimento ravvicinato.",
-      meta: { k: "Calibro · Cadenza", v: "20 mm · 6.000/min" },
-    },
-    {
       icon: "seat",
       badge: { label: "Sopravvivenza", variant: "cyan" },
       title: "Seggiolini Martin-Baker",
@@ -161,60 +150,10 @@ export const f14Tomcat: Aircraft = {
   ],
 
   armament: [
-    { kind: "Cannone", title: "M61A1 Vulcan", text: "Rotativa a 6 canne da 20 mm, 6.000 colpi/min per il combattimento ravvicinato." },
-    { kind: "Lungo raggio", title: "AIM-54 Phoenix", text: "Fino a 6 missili, raggio oltre 160 km, guida radar attiva terminale." },
-    { kind: "Medio raggio", title: "AIM-7 Sparrow", text: "Missile a guida radar semiattiva per ingaggi BVR a media distanza." },
-    { kind: "Corto raggio", title: "AIM-9 Sidewinder", text: "Cercatore a infrarossi per il dogfight ad alta manovrabilità." },
-  ],
-
-  operations: [
-    {
-      icon: "plane",
-      year: "1975",
-      title: "Saigon · Frequent Wind",
-      text: "Primo impiego reale: i Tomcat forniscono copertura aerea all'evacuazione finale dal Vietnam del Sud.",
-      meta: { k: "Ruolo", v: "copertura aerea" },
-    },
-    {
-      icon: "star",
-      year: "1981",
-      yearVariant: "gold",
-      title: "Golfo della Sirte I",
-      text: "Primi abbattimenti aria-aria del Tomcat: due Su-22 libici contro due F-14 della VF-41.",
-      meta: { k: "Vittorie", v: "2× Su-22" },
-    },
-    {
-      icon: "star",
-      year: "1989",
-      yearVariant: "gold",
-      title: "Golfo della Sirte II",
-      text: "Nuovo scontro al largo della Libia: due MiG-23 «Flogger» abbattuti da una coppia di F-14 della VF-32.",
-      meta: { k: "Vittorie", v: "2× MiG-23" },
-    },
-    {
-      icon: "clock",
-      year: "1980–88",
-      yearVariant: "cyan",
-      title: "Guerra Iran-Iraq",
-      text: "I Tomcat iraniani si rivelano letali: numerose vittorie rivendicate contro MiG-23, MiG-21 e Mirage F1.",
-      meta: { k: "Operatore", v: "IRIAF (Iran)" },
-    },
-    {
-      icon: "bars",
-      year: "1991",
-      yearVariant: "gold",
-      title: "Desert Storm",
-      text: "Difesa aerea della flotta e ricognizione tattica con pod TARPS. Un F-14 viene abbattuto da un missile SA-2.",
-      meta: { k: "Ricognizione", v: "TARPS · 1 perdita" },
-    },
-    {
-      icon: "bomb",
-      year: "1995–2006",
-      yearVariant: "cyan",
-      title: "«Bombcat» · OEF/OIF",
-      text: "Con il pod LANTIRN diventa un preciso cacciabombardiere: attacco al suolo in Afghanistan e Iraq fino al ritiro.",
-      meta: { k: "Carico", v: "LANTIRN + GBU" },
-    },
+    { kind: "Cannone", title: "M61A1 Vulcan", text: "Rotativa a 6 canne da 20 mm, 6.000 colpi/min per il combattimento ravvicinato.", reach: "~2 km", rangePct: 6 },
+    { kind: "Corto raggio", title: "AIM-9 Sidewinder", text: "Cercatore a infrarossi per il dogfight ad alta manovrabilità.", reach: "~18 km", rangePct: 18 },
+    { kind: "Medio raggio", title: "AIM-7 Sparrow", text: "Missile a guida radar semiattiva per ingaggi BVR a media distanza.", reach: "~70 km", rangePct: 45 },
+    { kind: "Lungo raggio", title: "AIM-54 Phoenix", text: "Fino a 6 missili, guida radar attiva terminale: il missile aria-aria a più lunga gittata del suo tempo.", reach: "160+ km", rangePct: 100 },
   ],
 
   variants: [
@@ -227,66 +166,39 @@ export const f14Tomcat: Aircraft = {
   ],
 
   timeline: [
-    { year: "1970", tag: { label: "Sviluppo", variant: "gold" }, title: "Primo volo", text: "Il 21 dicembre il prototipo decolla da Calverton, New York. Pochi giorni dopo un guasto idraulico ne causa la perdita, ma il programma prosegue." },
-    { year: "1974", tag: { label: "In servizio", variant: "cyan" }, title: "Entrata in servizio", text: "Il Tomcat entra in linea con la US Navy, imbarcato sulla USS Enterprise: nasce la difesa di flotta a lungo raggio." },
-    { year: "1976", tag: { label: "Export" }, title: "Esportazione in Iran", text: "L'Iran imperiale riceve 79 esemplari: gli unici F-14 mai venduti all'estero, tuttora operativi." },
-    { year: "1986", tag: { label: "Cultura pop" }, title: "Icona pop · Top Gun", text: "Il film consacra il Tomcat nell'immaginario collettivo come il caccia per eccellenza." },
-    { year: "1991", tag: { label: "Upgrade", variant: "gold" }, title: "F-14D Super Tomcat", text: "Nuovi motori GE F110, radar APG-71 e cockpit digitale: la versione definitiva della famiglia." },
-    { year: "2006", tag: { label: "Ritiro" }, title: "Ultimo appontaggio", text: "Il 22 settembre la US Navy ritira ufficialmente l'F-14, sostituito dall'F/A-18E/F Super Hornet." },
+    { year: "1968", tag: { label: "Origini" }, title: "Dal fallimento dell'F-111B al VFX", text: "La US Navy voleva un intercettore navale a lungo raggio, ma l'F-111B — versione imbarcata del bombardiere dell'Aeronautica — era troppo pesante per le portaerei e fu cancellato. Dal programma VFX che ne seguì, nel gennaio 1969 vinse il progetto Grumman G-303, che ne riutilizzò il cuore tecnologico: il radar AWG-9 e i missili a lunghissimo raggio AIM-54 Phoenix.", media: { src: "/images/aircraft/f-14-tomcat/f111b-1965.jpg", width: 1280, height: 958, alt: "Il prototipo General Dynamics F-111B in volo nel 1965", caption: "General Dynamics F-111B · 1965 · U.S. Navy (PD)" } },
+    { year: "1970", tag: { label: "Primo volo", variant: "gold" }, title: "Il primo Tomcat in volo", text: "Il 21 dicembre 1970 il prototipo decolla da Calverton; al secondo volo un guasto idraulico lo distrugge, ma l'equipaggio si salva e il programma prosegue. Il design — ali a geometria variabile, doppia deriva, pilota e RIO in tandem — è già quello definitivo, destinato a diventare una delle silhouette più riconoscibili della storia dell'aviazione.", media: { src: "/images/aircraft/f-14-tomcat/yf14-1972.jpg", width: 1280, height: 856, alt: "Formazione di prototipi YF-14A Tomcat in volo, ~1972", caption: "Prototipi YF-14A · ~1972 · U.S. Navy (PD)" } },
+    { year: "1974", tag: { label: "In servizio", variant: "cyan" }, title: "Entrata in servizio", text: "Con gli squadron VF-1 «Wolfpack» e VF-2 «Bounty Hunters» il Tomcat entra in linea sulla USS Enterprise. Il primo impiego reale arriva subito: nell'aprile 1975 i caccia coprono dall'alto l'evacuazione di Saigon (operazione Frequent Wind)." },
+    { year: "1976", tag: { label: "Iran", variant: "cyan" }, title: "L'Iran: unico cliente, oggi unico operatore", text: "Nel 1976 l'Iran dello Scià acquista 79 F-14A con i missili Phoenix: gli unici Tomcat mai esportati. Impiegati intensamente nella guerra Iran-Iraq (1980-88) come intercettori e «mini-AWACS», con decine di vittorie rivendicate, dopo il ritiro statunitense restano gli unici F-14 ancora in servizio attivo al mondo.", media: { src: "/images/aircraft/f-14-tomcat/iran-mehrabad-2013.jpg", width: 1200, height: 755, alt: "Un F-14 dell'aeronautica iraniana a Mehrabad nel 2013", caption: "F-14 iraniano · Mehrabad, 2013 · M. Shaltouki (CC BY 4.0)" } },
+    { year: "1981 / 1989", tag: { label: "Combattimento", variant: "gold" }, title: "Golfo della Sirte", text: "Due scontri al largo della Libia: nel 1981 due F-14 del VF-41 «Black Aces» abbattono due Su-22, nel 1989 due F-14 del VF-32 abbattono due MiG-23. Negli stessi anni il Tomcat firma operazioni celebri, come l'intercettazione in volo dei dirottatori dell'Achille Lauro (1985)." },
+    { year: "1986", tag: { label: "Cultura pop" }, title: "Top Gun", text: "Il film con Tom Cruise trasforma il Tomcat in un'icona globale e fa impennare gli arruolamenti in Marina. Per una generazione, «caccia» significa F-14.", media: { src: "/images/aircraft/f-14-tomcat/vf84-1986.jpg", width: 1280, height: 906, alt: "Un F-14A Tomcat del VF-84 Jolly Rogers in volo nel 1986", caption: "F-14A del VF-84 «Jolly Rogers», 1986 · U.S. Navy (PD)" } },
+    { year: "1987–90", tag: { label: "Super Tomcat", variant: "gold" }, title: "Le versioni B e D", text: "I problematici motori Pratt & Whitney TF30 lasciano il posto ai potenti e affidabili General Electric F110 (F-14A+, poi F-14B). Nel 1990 debutta l'F-14D «Super Tomcat»: radar digitale AN/APG-71, glass cockpit e avionica rinnovata, la versione più capace della famiglia." },
+    { year: "1991", tag: { label: "Desert Storm", variant: "cyan" }, title: "La Guerra del Golfo", text: "Impiegato in difesa aerea e ricognizione tattica con il pod TARPS. Un F-14 viene abbattuto da un missile SA-2 (il pilota recuperato, il RIO catturato); un altro abbatte un elicottero iracheno, unica vittoria aria-aria del Tomcat nel conflitto." },
+    { year: "1995–2003", tag: { label: "Bombcat" }, title: "Da caccia a cacciabombardiere", text: "Con il pod di puntamento LANTIRN il Tomcat impara a sganciare bombe a guida laser: nasce il «Bombcat». Lo si vede all'opera sui Balcani e poi nelle operazioni Enduring Freedom (Afghanistan, 2001) e Iraqi Freedom (2003), in lunghe missioni d'attacco di precisione." },
+    { year: "2006", tag: { label: "Ritiro" }, title: "L'ultimo appontaggio", text: "Dopo l'ultima missione di combattimento in Iraq, il 22 settembre 2006 la US Navy ritira l'F-14, sostituito dall'F/A-18E/F Super Hornet: si chiudono 32 anni di servizio. Gli esemplari radiati verranno poi distrutti per impedire che i ricambi raggiungano l'Iran.", media: { src: "/images/aircraft/f-14-tomcat/f14d-2005.jpg", width: 1279, height: 924, alt: "F-14D Tomcat in missione sul Golfo Persico nel 2005", caption: "F-14D sul Golfo Persico · 2005 · U.S. Navy (PD)" } },
   ],
 
   facts: [
-    { label: "Costruttore · Grumman", variant: "gold" },
-    { label: "Primo volo · 21 dic 1970" },
-    { label: "Operatori · USA & Iran", variant: "cyan", dot: true },
-    { label: "Esemplari · 712" },
-    { label: "Costo unitario · ~38 M$ (1998)" },
-    { label: "Equipaggio · 2 (pilota + RIO)" },
-    { label: "Punti d'aggancio · 10" },
-    { label: "Carico bellico · 6.600 kg", variant: "gold" },
-    { label: "Soprannome · «Turkey»" },
-    { label: "Film · Top Gun (1986 / 2022)" },
-    { label: "Sostituito da · F/A-18E/F" },
-    { label: "Anni di servizio · 32", variant: "cyan" },
-    { label: "Struttura · 25% titanio" },
-    { label: "TF30 · 28% degli incidenti" },
-    { label: "Atterrò con metà ala persa", variant: "gold" },
-    { label: "Esemplari distrutti nel 2007 (anti-Iran)" },
+    {
+      title: "Perché si chiama «Tomcat»",
+      text: "Il nome unisce la tradizione Grumman dei felini all'omaggio all'ammiraglio Thomas «Tom» Connolly, grande sostenitore del programma: gli addetti ai lavori lo chiamavano scherzosamente «Tom's Cat».",
+    },
+    {
+      title: "Il soprannome «Turkey»",
+      text: "Gli equipaggi lo chiamavano affettuosamente «tacchino»: a bassa velocità, con ali, slat, flap e superfici mobili tutte estese, il profilo goffo e impennato ricordava proprio un tacchino.",
+    },
+    {
+      title: "Costoso ma insostituibile",
+      text: "Un F-14 costava circa 38 milioni di dollari (1998): un prezzo elevato giustificato dall'unica combinazione radar AWG-9 + missili Phoenix capace di difendere la flotta a oltre 150 km.",
+    },
+    {
+      title: "I motori, il suo tallone d'Achille",
+      text: "I primi turbofan Pratt & Whitney TF30 erano inclini allo stallo del compressore ad alti angoli d'attacco: vennero attribuiti a essi circa il 28% di tutti gli incidenti, fino alla sostituzione con i GE F110.",
+    },
+    {
+      title: "Una star del cinema",
+      text: "Top Gun (1986) ne fece un'icona globale e un potente strumento di reclutamento per la Marina; il sequel Top Gun: Maverick (2022) lo ha riportato sul grande schermo a sedici anni dal ritiro.",
+    },
   ],
 
-  gallery: [
-    {
-      src: "/images/aircraft/f-14-tomcat/f111b-1965.jpg",
-      width: 1280,
-      height: 958,
-      alt: "Il prototipo General Dynamics F-111B in volo, predecessore navale del programma da cui nacque l'F-14",
-      caption: "General Dynamics F-111B · 1965 · U.S. Navy (PD)",
-      year: "1965",
-      title: "Il predecessore fallito",
-      text: "L'F-111B navale, troppo pesante per le portaerei, viene cancellato. Dalle sue ceneri — e dal suo radar e dai missili Phoenix — nasce il programma VFX che porterà al Tomcat.",
-      badges: [{ label: "Eredità · AWG-9 + Phoenix" }, { label: "Programma VFX", variant: "gold" }],
-    },
-    {
-      src: "/images/aircraft/f-14-tomcat/yf14-1972.jpg",
-      width: 1280,
-      height: 856,
-      alt: "Formazione di prototipi YF-14A Tomcat in volo intorno al 1972",
-      caption: "Prototipi YF-14A in formazione · ~1972 · U.S. Navy (PD)",
-      year: "1972",
-      title: "I primi Tomcat",
-      text: "Dopo il primo volo del 21 dicembre 1970, i prototipi YF-14A solcano il cielo. Il design a geometria variabile e la doppia deriva definiscono una silhouette destinata a diventare leggendaria.",
-      badges: [{ label: "Primo volo · 21 dic 1970", variant: "cyan" }, { label: "Ali variabili 20°–68°" }],
-    },
-    {
-      src: "/images/aircraft/f-14-tomcat/f14d-2005.jpg",
-      width: 1279,
-      height: 924,
-      alt: "Un F-14D Tomcat in missione sul Golfo Persico nel 2005, poco prima del ritiro",
-      caption: "F-14D sul Golfo Persico · 2005 · U.S. Navy (PD)",
-      year: "2005",
-      title: "L'ultima stagione",
-      text: "Trent'anni dopo, l'F-14D Super Tomcat vola la sua ultima campagna come cacciabombardiere di precisione. Pochi mesi più tardi, nel 2006, la U.S. Navy lo ritira definitivamente.",
-      badges: [{ label: "Super Tomcat F-14D", variant: "gold" }, { label: "Ritiro · 2006" }],
-    },
-  ],
 };
