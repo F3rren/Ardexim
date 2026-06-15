@@ -27,7 +27,7 @@ export default function Hangar({
       <Suspense fallback={null}>
         <ModelErrorBoundary onError={onError}>
           {/* auto-centratura + auto-fit della camera per modelli di scala ignota */}
-          <Bounds fit clip observe margin={1.15}>
+          <Bounds fit clip observe margin={1.05}>
             <Center>
               <GltfModel url={modelUrl} />
             </Center>

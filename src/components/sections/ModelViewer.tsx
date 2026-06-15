@@ -32,7 +32,7 @@ export default function ModelViewer({
           text="Trascina per ruotare il velivolo ed esplorarlo da ogni angolazione."
         />
 
-        <div className="relative border border-line rounded-[14px] overflow-hidden min-h-[520px] max-lg:min-h-[380px] bg-[radial-gradient(620px_400px_at_50%_28%,rgba(56,214,196,0.08),transparent_70%)] bg-bg2 touch-none">
+        <div className="relative border border-line rounded-[14px] overflow-hidden h-[clamp(440px,76vh,860px)] bg-[radial-gradient(620px_400px_at_50%_28%,rgba(56,214,196,0.08),transparent_70%)] bg-bg2 touch-none">
           <span className="absolute top-3.5 left-4 z-10 font-mono text-[10px] tracking-[0.14em] uppercase text-cyan/70 pointer-events-none">
             CAD · MODELLO 3D // VIEW-01
           </span>
