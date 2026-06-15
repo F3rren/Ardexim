@@ -11,6 +11,7 @@ import Evolution from "@/components/sections/Evolution";
 import Variants from "@/components/sections/Variants";
 import Facts from "@/components/sections/Facts";
 import FinalCta from "@/components/sections/FinalCta";
+import Credits from "@/components/sections/Credits";
 
 export const dynamicParams = false;
 
@@ -63,6 +64,7 @@ export default async function AircraftPage({
         <Variants aircraft={a} />
         <Facts aircraft={a} />
         <FinalCta aircraft={a} />
+        <Credits aircraft={a} />
       </main>
     </>
   );

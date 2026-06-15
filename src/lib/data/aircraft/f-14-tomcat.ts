@@ -16,7 +16,11 @@ export const f14Tomcat: Aircraft = {
   // Scarica un modello CC-BY da Sketchfab (glTF/GLB) e salvalo in
   // public/models/f-14-tomcat.glb, poi compila model3dCredit qui sotto.
   model3d: "/models/f-14-tomcat.glb",
-  // model3dCredit: { author: "—", url: "—", license: "CC-BY 4.0" },
+  model3dCredit: {
+    author: "bohmerang",
+    url: "https://sketchfab.com/3d-models/f-14-tomcat-fighter-jet-free-497f77c311b5411d9b567d8707a81c33",
+    license: "CC BY-NC-SA 4.0",
+  },
 
   // ---- dettaglio ----
   summary:

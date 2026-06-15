@@ -7,7 +7,6 @@ import HeroModel from "@/components/sections/HeroModel";
 export default function Hero({ aircraft }: { aircraft: Aircraft }) {
   const [first, ...rest] = aircraft.name.split(" ");
   const restName = rest.join(" ");
-  const credit = aircraft.model3dCredit;
 
   return (
     <header id="top" className="relative">
@@ -74,17 +73,6 @@ export default function Hero({ aircraft }: { aircraft: Aircraft }) {
           </div>
         </div>
       </div>
-
-      {credit && (
-        <div className="relative z-[3] mx-auto max-w-[1180px] px-6">
-          <p className="mt-4 font-mono text-[11px] text-muted2">
-            Modello 3D: «{credit.author}» — {credit.license} ·{" "}
-            <a className="underline hover:text-goldbr" href={credit.url} target="_blank" rel="noopener noreferrer">
-              fonte
-            </a>
-          </p>
-        </div>
-      )}
     </header>
   );
 }
