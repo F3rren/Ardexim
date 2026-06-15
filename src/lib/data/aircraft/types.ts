@@ -82,6 +82,7 @@ export interface Aircraft {
   service: string;
   status: "in-servizio" | "ritirato";
   topSpeed: string;
+  unitCost: string; // costo unitario indicativo (valore + anno/base, es. "≈ 38 mln $ (1998)")
   thumb: string;
   thumbAlt: string;
   // dettaglio

@@ -11,6 +11,7 @@ export const f14Tomcat: Aircraft = {
   service: "1974–2006",
   status: "ritirato",
   topSpeed: "Mach 2.34",
+  unitCost: "≈ 38 mln $ (1998)",
   thumb: "/images/aircraft/f-14-tomcat/f14d-2005.jpg",
   thumbAlt: "F-14D Tomcat in volo sul Golfo Persico",
   // Scarica un modello CC-BY da Sketchfab (glTF/GLB) e salvalo in
