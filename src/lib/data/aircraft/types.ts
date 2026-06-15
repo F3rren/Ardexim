@@ -114,5 +114,6 @@ export interface Aircraft {
   timeline: TimelineItem[];
   facts: BadgeData[];
   gallery: Photo[];
-  model3d?: string; // chiave nel registry dei modelli 3D
+  model3d?: string; // percorso al file GLB in /public (es. /models/f-14-tomcat.glb)
+  model3dCredit?: { author: string; url: string; license: string };
 }

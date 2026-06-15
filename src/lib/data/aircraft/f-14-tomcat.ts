@@ -13,7 +13,10 @@ export const f14Tomcat: Aircraft = {
   topSpeed: "Mach 2.34",
   thumb: "/images/aircraft/f-14-tomcat/f14d-2005.jpg",
   thumbAlt: "F-14D Tomcat in volo sul Golfo Persico",
-  model3d: "tomcat",
+  // Scarica un modello CC-BY da Sketchfab (glTF/GLB) e salvalo in
+  // public/models/f-14-tomcat.glb, poi compila model3dCredit qui sotto.
+  model3d: "/models/f-14-tomcat.glb",
+  // model3dCredit: { author: "—", url: "—", license: "CC-BY 4.0" },
 
   // ---- dettaglio ----
   summary:
