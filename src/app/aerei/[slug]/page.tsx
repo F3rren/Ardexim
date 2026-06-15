@@ -7,7 +7,6 @@ import Overview from "@/components/sections/Overview";
 import Specs from "@/components/sections/Specs";
 import Systems from "@/components/sections/Systems";
 import Armament from "@/components/sections/Armament";
-import Operations from "@/components/sections/Operations";
 import Evolution from "@/components/sections/Evolution";
 import Variants from "@/components/sections/Variants";
 import Facts from "@/components/sections/Facts";
@@ -47,7 +46,6 @@ export default async function AircraftPage({
     { id: "specs", label: "Specifiche" },
     { id: "systems", label: "Sistemi" },
     { id: "armament", label: "Armi" },
-    { id: "operations", label: "Impiego" },
     { id: "history", label: "Evoluzione" },
     { id: "variants", label: "Varianti" },
   ];
@@ -61,7 +59,6 @@ export default async function AircraftPage({
         <Specs aircraft={a} />
         <Systems aircraft={a} />
         <Armament aircraft={a} />
-        <Operations aircraft={a} />
         <Evolution aircraft={a} />
         <Variants aircraft={a} />
         <Facts aircraft={a} />

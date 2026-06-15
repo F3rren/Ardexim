@@ -33,9 +33,6 @@ export const f14Tomcat: Aircraft = {
     "Nato dal programma VFX dopo il fallimento dell'F-111B, il progetto Grumman G-303 fu selezionato nel gennaio 1969. Il Tomcat unisce raggio d'azione, sensori e potenza di fuoco in una piattaforma pensata per intercettare le minacce a centinaia di chilometri dalla portaerei. Circa il 25% della struttura è in titanio: un esemplare riuscì ad atterrare dopo aver perso oltre metà di un'ala in collisione.",
   armamentText:
     "Fino a 6.600 kg di carico bellico su 10 punti d'aggancio, dal duello ravvicinato all'intercettazione oltre l'orizzonte visivo.",
-  operationsText:
-    "Dalla copertura delle evacuazioni alle vittorie aria-aria sul Mediterraneo, fino al ruolo da cacciabombardiere «Bombcat»: mezzo secolo di operazioni reali.",
-
   stats: [
     { value: 2485, label: "Vel. max km/h" },
     { value: 2.34, decimals: 2, label: "Mach (a quota)" },
@@ -132,13 +129,6 @@ export const f14Tomcat: Aircraft = {
       meta: { k: "Spinta A/B cad.", v: "~124 kN" },
     },
     {
-      icon: "cannon",
-      badge: { label: "Armamento interno", variant: "cyan" },
-      title: "Cannone M61A1 Vulcan",
-      text: "Rotativa Gatling a 6 canne integrata nella fusoliera per il combattimento ravvicinato.",
-      meta: { k: "Calibro · Cadenza", v: "20 mm · 6.000/min" },
-    },
-    {
       icon: "seat",
       badge: { label: "Sopravvivenza", variant: "cyan" },
       title: "Seggiolini Martin-Baker",
@@ -168,56 +158,6 @@ export const f14Tomcat: Aircraft = {
     { kind: "Corto raggio", title: "AIM-9 Sidewinder", text: "Cercatore a infrarossi per il dogfight ad alta manovrabilità." },
   ],
 
-  operations: [
-    {
-      icon: "plane",
-      year: "1975",
-      title: "Saigon · Frequent Wind",
-      text: "Primo impiego reale: i Tomcat forniscono copertura aerea all'evacuazione finale dal Vietnam del Sud.",
-      meta: { k: "Ruolo", v: "copertura aerea" },
-    },
-    {
-      icon: "star",
-      year: "1981",
-      yearVariant: "gold",
-      title: "Golfo della Sirte I",
-      text: "Primi abbattimenti aria-aria del Tomcat: due Su-22 libici contro due F-14 della VF-41.",
-      meta: { k: "Vittorie", v: "2× Su-22" },
-    },
-    {
-      icon: "star",
-      year: "1989",
-      yearVariant: "gold",
-      title: "Golfo della Sirte II",
-      text: "Nuovo scontro al largo della Libia: due MiG-23 «Flogger» abbattuti da una coppia di F-14 della VF-32.",
-      meta: { k: "Vittorie", v: "2× MiG-23" },
-    },
-    {
-      icon: "clock",
-      year: "1980–88",
-      yearVariant: "cyan",
-      title: "Guerra Iran-Iraq",
-      text: "I Tomcat iraniani si rivelano letali: numerose vittorie rivendicate contro MiG-23, MiG-21 e Mirage F1.",
-      meta: { k: "Operatore", v: "IRIAF (Iran)" },
-    },
-    {
-      icon: "bars",
-      year: "1991",
-      yearVariant: "gold",
-      title: "Desert Storm",
-      text: "Difesa aerea della flotta e ricognizione tattica con pod TARPS. Un F-14 viene abbattuto da un missile SA-2.",
-      meta: { k: "Ricognizione", v: "TARPS · 1 perdita" },
-    },
-    {
-      icon: "bomb",
-      year: "1995–2006",
-      yearVariant: "cyan",
-      title: "«Bombcat» · OEF/OIF",
-      text: "Con il pod LANTIRN diventa un preciso cacciabombardiere: attacco al suolo in Afghanistan e Iraq fino al ritiro.",
-      meta: { k: "Carico", v: "LANTIRN + GBU" },
-    },
-  ],
-
   variants: [
     { sub: "// 1974", code: "F-14A", text: "Versione originale con motori Pratt & Whitney TF30, soggetti a stallo del compressore ad alti angoli d'attacco." },
     { sub: "// 1988", code: "F-14B", text: "Adotta i ben più affidabili e potenti turbofan General Electric F110, risolvendo i limiti propulsivi dell'A." },
@@ -241,22 +181,11 @@ export const f14Tomcat: Aircraft = {
   ],
 
   facts: [
-    { label: "Costruttore · Grumman", variant: "gold" },
-    { label: "Primo volo · 21 dic 1970" },
-    { label: "Operatori · USA & Iran", variant: "cyan", dot: true },
-    { label: "Esemplari · 712" },
-    { label: "Costo unitario · ~38 M$ (1998)" },
-    { label: "Equipaggio · 2 (pilota + RIO)" },
-    { label: "Punti d'aggancio · 10" },
-    { label: "Carico bellico · 6.600 kg", variant: "gold" },
     { label: "Soprannome · «Turkey»" },
+    { label: "Nome · da «Tom's Cat» (amm. Connolly)", variant: "gold" },
+    { label: "Costo unitario · ~38 M$ (1998)" },
     { label: "Film · Top Gun (1986 / 2022)" },
-    { label: "Sostituito da · F/A-18E/F" },
-    { label: "Anni di servizio · 32", variant: "cyan" },
-    { label: "Struttura · 25% titanio" },
-    { label: "TF30 · 28% degli incidenti" },
-    { label: "Atterrò con metà ala persa", variant: "gold" },
-    { label: "Esemplari distrutti nel 2007 (anti-Iran)" },
+    { label: "TF30 · 28% degli incidenti", variant: "cyan" },
   ],
 
 };

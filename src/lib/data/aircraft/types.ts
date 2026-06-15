@@ -49,15 +49,6 @@ export interface ArmCard {
   text: string;
 }
 
-export interface OpCard {
-  icon: string;
-  year: string;
-  yearVariant?: BadgeVariant;
-  title: string;
-  text: string;
-  meta: { k: string; v: string };
-}
-
 export interface VariantCard {
   sub: string;
   code: string;
@@ -99,13 +90,11 @@ export interface Aircraft {
   // intro testuali (specifiche dell'aereo) per alcune sezioni
   overviewText?: string;
   armamentText?: string;
-  operationsText?: string;
   bento: Feature[];
   stats: Stat[];
   specs: SpecBlock[];
   systems: SystemCard[];
   armament: ArmCard[];
-  operations: OpCard[];
   variants: VariantCard[];
   timeline: TimelineItem[];
   facts: BadgeData[];
