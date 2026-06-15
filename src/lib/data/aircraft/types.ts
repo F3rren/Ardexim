@@ -64,23 +64,20 @@ export interface VariantCard {
   text: string;
 }
 
+export interface TimelineMedia {
+  src: string;
+  alt: string;
+  caption: string;
+  width: number;
+  height: number;
+}
+
 export interface TimelineItem {
   year: string;
   tag: BadgeData;
   title: string;
   text: string;
-}
-
-export interface Photo {
-  src: string;
-  alt: string;
-  caption: string;
-  year: string;
-  title: string;
-  text: string;
-  badges: BadgeData[];
-  width: number;
-  height: number;
+  media?: TimelineMedia; // foto storica opzionale per la tappa
 }
 
 export interface Aircraft {
@@ -103,7 +100,6 @@ export interface Aircraft {
   overviewText?: string;
   armamentText?: string;
   operationsText?: string;
-  galleryText?: string;
   bento: Feature[];
   stats: Stat[];
   specs: SpecBlock[];
@@ -113,7 +109,6 @@ export interface Aircraft {
   variants: VariantCard[];
   timeline: TimelineItem[];
   facts: BadgeData[];
-  gallery: Photo[];
   model3d?: string; // percorso al file GLB in /public (es. /models/f-14-tomcat.glb)
   model3dCredit?: { author: string; url: string; license: string };
 }

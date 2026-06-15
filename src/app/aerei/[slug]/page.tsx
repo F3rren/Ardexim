@@ -8,8 +8,7 @@ import Specs from "@/components/sections/Specs";
 import Systems from "@/components/sections/Systems";
 import Armament from "@/components/sections/Armament";
 import Operations from "@/components/sections/Operations";
-import Gallery from "@/components/sections/Gallery";
-import History from "@/components/sections/History";
+import Evolution from "@/components/sections/Evolution";
 import Variants from "@/components/sections/Variants";
 import Facts from "@/components/sections/Facts";
 import FinalCta from "@/components/sections/FinalCta";
@@ -49,8 +48,7 @@ export default async function AircraftPage({
     { id: "systems", label: "Sistemi" },
     { id: "armament", label: "Armi" },
     { id: "operations", label: "Impiego" },
-    ...(a.gallery.length > 0 ? [{ id: "gallery", label: "Galleria" }] : []),
-    { id: "history", label: "Storia" },
+    { id: "history", label: "Evoluzione" },
     { id: "variants", label: "Varianti" },
   ];
 
@@ -64,8 +62,7 @@ export default async function AircraftPage({
         <Systems aircraft={a} />
         <Armament aircraft={a} />
         <Operations aircraft={a} />
-        <Gallery aircraft={a} />
-        <History aircraft={a} />
+        <Evolution aircraft={a} />
         <Variants aircraft={a} />
         <Facts aircraft={a} />
         <FinalCta aircraft={a} />
