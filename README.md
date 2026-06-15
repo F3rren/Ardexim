@@ -69,6 +69,8 @@ Fotografie storiche via Wikimedia Commons:
   Typhoon tedesco TaktLwG 74 (2024) — *U.S. Air Force*, **pubblico dominio**.
 - **F-16 Fighting Falcon**: prototipo YF-16 — *Balon Greyjoy*, **CC0**; F-16A danese, F-16C in Guerra del Golfo (1991)
   e shot in volo — *U.S. Air Force*, **pubblico dominio**; F-16I «Sufa» israeliano (2016) — *Israeli Air Force*, **CC BY 4.0**.
+- **B-2 Spirit**: in volo, test su Edwards, rifornimento in volo, decollo e operazione «Midnight Hammer» (2025) —
+  *U.S. Air Force*, **pubblico dominio**.
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -88,6 +90,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **Eurofighter Typhoon** — «[Eurofighter Typhoon - Fighter Jet - Free](https://sketchfab.com/3d-models/eurofighter-typhoon-fighter-jet-free-992bcc8987964ca09d55410330aa8579)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **F-16 Fighting Falcon** — «[F-16 Fighting Falcon - Fighter Jet - Free](https://sketchfab.com/3d-models/f-16-fighting-falcon-fighter-jet-free-f0b00989e5634764848ef2c235c64db5)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **B-2 Spirit** — «[Northrop Grumman B-2 Spirit - FREE](https://sketchfab.com/3d-models/northrop-grumman-b-2-spirit-free-9cd6b00813c04401a5427ae71b7a0cdc)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.
