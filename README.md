@@ -64,10 +64,15 @@ Fotografie storiche via Wikimedia Commons:
 - **Su-57 Felon**: T-50 «52» (2013) — *Alan Wilson*, **CC BY-SA 2.0**; T-50 al MAKS 2013 — *Doomych*,
   **pubblico dominio**; Su-57 al forum Army-2022 — *Boevaya mashina*, **CC BY-SA 3.0**;
   Su-57 al salone di Zhuhai 2024 — *N509FZ*, **CC BY-SA 4.0**.
+- **Eurofighter Typhoon**: velivolo di sviluppo DA2 — *kitmasterbloke*, **CC BY 2.0**; Typhoon F2 RAF (2006) —
+  *Arpingstone*, **pubblico dominio**; Typhoon dell'Aeronautica Militare italiana — *kevinmcgill*, **CC BY-SA 2.0**;
+  Typhoon tedesco TaktLwG 74 (2024) — *U.S. Air Force*, **pubblico dominio**.
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
 [Wikipedia (Su-57)](https://en.wikipedia.org/wiki/Sukhoi_Su-57),
+[Wikipedia (Typhoon)](https://en.wikipedia.org/wiki/Eurofighter_Typhoon),
+[eurofighter.com](https://www.eurofighter.com/),
 [aereimilitari.org](https://www.aereimilitari.org/Aerei/F-14.htm).
 
 ## Crediti modelli 3D
@@ -77,6 +82,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **F-15E Strike Eagle** — «[F-15E Strike Eagle - Fighter Jet - Free](https://sketchfab.com/3d-models/f-15e-strike-eagle-fighter-jet-free-fff7d75490474e9b964d90cc031c8d01)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **Su-57 Felon** — «[Sukhoi Su-57 Felon - Fighter Jet - Free](https://sketchfab.com/3d-models/sukhoi-su-57-felon-fighter-jet-free-59995d6f34ba4bb7990195be3a745fc5)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **Eurofighter Typhoon** — «[Eurofighter Typhoon - Fighter Jet - Free](https://sketchfab.com/3d-models/eurofighter-typhoon-fighter-jet-free-992bcc8987964ca09d55410330aa8579)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.

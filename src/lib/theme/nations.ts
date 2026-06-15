@@ -30,12 +30,23 @@ const RUSSIA: NationTheme = {
   },
 };
 
+// consorzio europeo (Eurofighter): palette blu/acciaio
+const EUROPA: NationTheme = {
+  label: "Europa",
+  vars: {
+    "--color-gold": "#2f80d6", // azzurro acciaio (accento primario)
+    "--color-goldbr": "#63a9f0", // azzurro brillante
+    "--color-cyan": "#54cfd6", // ciano-acqua (accento secondario)
+  },
+};
+
 const DEFAULT = USA;
 
 // chiave = campo aircraft.country
 const byCountry: Record<string, NationTheme> = {
   USA: USA,
   Russia: RUSSIA,
+  Europa: EUROPA,
 };
 
 export function nationTheme(country: string): NationTheme {
