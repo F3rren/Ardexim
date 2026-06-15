@@ -32,7 +32,8 @@ export default function HeroModel({ modelUrl }: { modelUrl?: string }) {
   }
 
   return (
-    <div className="absolute inset-0">
+    // su desktop sposta il modello a destra per non sovrapporlo al titolo
+    <div className="absolute inset-0 lg:translate-x-[9%]">
       <Hangar modelUrl={modelUrl} onError={() => setFailed(true)} />
     </div>
   );
