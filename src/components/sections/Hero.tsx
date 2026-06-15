@@ -1,8 +1,8 @@
 import type { Aircraft } from "@/lib/data/aircraft/types";
+import { asset } from "@/lib/basePath";
 import Reveal from "@/components/ui/Reveal";
 import Badge from "@/components/ui/Badge";
 import Icon from "@/components/ui/Icon";
-import HeroModel from "@/components/sections/HeroModel";
 
 export default function Hero({ aircraft }: { aircraft: Aircraft }) {
   const [first, ...rest] = aircraft.name.split(" ");
@@ -10,9 +10,14 @@ export default function Hero({ aircraft }: { aircraft: Aircraft }) {
 
   return (
     <header id="top" className="relative">
-      {/* palco 3D a tutta larghezza con testo in overlay */}
+      {/* foto a tutta larghezza con testo in overlay */}
       <div className="relative w-full h-[clamp(560px,88vh,980px)]">
-        <HeroModel modelUrl={aircraft.model3d} poster={aircraft.thumb} posterAlt={aircraft.thumbAlt} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={asset(aircraft.thumb)}
+          alt={aircraft.thumbAlt}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
         {/* scrim per leggibilità del testo */}
         <div

@@ -10,7 +10,9 @@ const Hangar = dynamic(() => import("@/components/three/Hangar"), {
   loading: () => null,
 });
 
-export default function HeroModel({
+// Riempie il proprio contenitore (che dev'essere `relative`): mostra il poster
+// statico finché il modello 3D non ha disegnato il primo frame, poi dissolve.
+export default function ModelViewer({
   modelUrl,
   poster,
   posterAlt,
@@ -51,9 +53,7 @@ export default function HeroModel({
           ready ? "opacity-0" : "opacity-100"
         }`}
       />
-
-      {/* su desktop sposta il modello a destra per non sovrapporlo al titolo */}
-      <div className="absolute inset-0 lg:translate-x-[9%]">
+      <div className="absolute inset-0">
         <Hangar modelUrl={modelUrl} onError={() => setFailed(true)} onReady={handleReady} />
       </div>
     </>
