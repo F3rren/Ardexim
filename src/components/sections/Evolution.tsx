@@ -73,18 +73,18 @@ export default function Evolution({ aircraft }: { aircraft: Aircraft }) {
             <Reveal key={i}>
               <div className={`relative last:pb-0 pl-1.5 ${t.media ? "pb-12" : "pb-[72px]"}`}>
                 <span className="absolute left-[-34px] top-1 w-4 h-4 rounded-full bg-bg border-[3px] border-gold" />
-                {t.media ? (
-                  <div className="grid lg:grid-cols-2 gap-8 items-center">
-                    <div className={side[i] === "left" ? "lg:order-2" : ""}>
-                      <EntryContent t={t} />
-                    </div>
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  <div className={t.media && side[i] === "left" ? "lg:order-2" : ""}>
+                    <EntryContent t={t} />
+                  </div>
+                  {t.media ? (
                     <div className={side[i] === "left" ? "lg:order-1" : ""}>
                       <TimelineImage media={t.media} />
                     </div>
-                  </div>
-                ) : (
-                  <EntryContent t={t} />
-                )}
+                  ) : (
+                    <div aria-hidden="true" />
+                  )}
+                </div>
               </div>
             </Reveal>
           ))}
