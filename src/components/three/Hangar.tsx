@@ -37,8 +37,8 @@ export default function Hangar({
     const c = controlsRef.current;
     if (c && !zoomLimitsSet.current) {
       const d = c.getDistance();
-      c.minDistance = d * 0.55; // zoom-in massimo
-      c.maxDistance = d * 1.9; // zoom-out massimo
+      c.minDistance = d * 0.3; // zoom-in massimo (più ravvicinato)
+      c.maxDistance = d * 2.5; // zoom-out massimo
       zoomLimitsSet.current = true;
     }
   }, []);
