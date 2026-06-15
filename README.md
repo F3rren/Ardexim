@@ -53,11 +53,15 @@ pubblica su GitHub Pages. `basePath`/`assetPrefix` valgono `/f14-tomcat` solo in
 ## Crediti immagini
 
 Fotografie storiche via Wikimedia Commons:
-- **U.S. Navy / U.S. Government — pubblico dominio**: F-111B (1965), prototipi YF-14A (~1972),
+- **F-14 Tomcat — U.S. Navy / U.S. Government, pubblico dominio**: F-111B (1965), prototipi YF-14A (~1972),
   F-14D sul Golfo Persico (2005), F-14A del VF-84 «Jolly Rogers» (1986).
 - **F-14 iraniano a Mehrabad (2013)** — foto di **Mohammad Shaltouki**, licenza **CC BY 4.0**.
+- **F-15E Strike Eagle — U.S. Air Force, pubblico dominio**: vira da un'aerocisterna, decollo a pieno carico,
+  formazione di Desert Storm (1991), sui cieli dell'Afghanistan, in missione sull'Iraq (2004),
+  F-15EX Eagle II.
 
-Fonti dati: [Wikipedia](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
+Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
+[Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
 [aereimilitari.org](https://www.aereimilitari.org/Aerei/F-14.htm).
 
 ## Licenza
