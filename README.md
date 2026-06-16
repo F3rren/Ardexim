@@ -37,15 +37,41 @@ src/
     data/aircraft/           # registro aerei (un file per aereo)
     store/                   # stato geometria alare
 public/images/aircraft/<slug>/   # immagini self-hostate
-public/models/<NAZIONE>/         # modelli 3D (GLB), una cartella per Stato (USA, RUS, …)
+public/models/<NAZIONE>/         # modelli 3D (GLB), per Stato d'origine (USA, RUS, EU, FRA?, SWD, JAP…)
 ```
+
+### Convenzione cartelle modelli
+
+Le sottocartelle di `public/models/` servono solo a **organizzare i file**: ciò che conta per l'app
+è il **percorso** indicato nei dati (`model3d` / `models3d[].url`), quindi un GLB funziona ovunque sia.
+Regola consigliata: cartella = **Stato di progetto/origine** dell'aereo (es. l'F-35 sta in `USA/` anche
+se lo usano molti Paesi). Le **varianti nazionali** di uno stesso aereo si gestiscono col campo
+`models3d` (vedi sotto), non spostando l'aereo di cartella.
 
 ### Aggiungere un aereo
 
 1. Creare `src/lib/data/aircraft/<slug>.ts` con i dati (interfaccia `Aircraft`).
 2. Registrarlo in `src/lib/data/aircraft/index.ts`.
-3. (Opzionale) mettere il GLB in `public/models/<NAZIONE>/` e indicarne il percorso nel campo `model3d`.
+3. (Opzionale) mettere il GLB in `public/models/<NAZIONE>/` e indicarne il percorso in `model3d`.
 4. La palette colore segue il campo `country` (vedi `src/lib/theme/nations.ts`): aggiungere lì la nazione per un nuovo accento.
+
+### Più modelli 3D per un aereo (switcher)
+
+Per offrire più versioni dello stesso aereo (es. F-16 base + F-16I israeliano), al posto di `model3d`
+si usa `models3d` nel file dati:
+
+```ts
+models3d: [
+  { label: "Base", url: "/models/USA/f-16_fighting_falcon.glb",
+    credit: { author: "…", url: "…", license: "CC BY-NC-SA 4.0" } },
+  { label: "F-16I Sufa", url: "/models/ISR/f-16i_sufa.glb",
+    credit: { author: "…", url: "…", license: "…" } },
+],
+```
+
+Con due o più voci, la sezione «Modello 3D» mostra automaticamente i pulsanti per cambiare versione,
+e ogni modello viene attribuito nel blocco crediti. Con una sola voce (o usando `model3d`) lo switcher
+non compare. L'helper `getModels()` normalizza i due casi.
 
 ## Deploy
 

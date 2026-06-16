@@ -1,4 +1,4 @@
-import type { Aircraft } from "./types";
+import type { Aircraft, Model3DEntry } from "./types";
 import { f14Tomcat } from "./f-14-tomcat";
 import { f15eStrikeEagle } from "./f-15e-strike-eagle";
 import { su57Felon } from "./su-57-felon";
@@ -47,4 +47,12 @@ export function getAllSlugs(): string[] {
   return aircraft.map((a) => a.slug);
 }
 
-export type { Aircraft };
+// Restituisce sempre la lista (eventualmente vuota) dei modelli 3D di un aereo,
+// normalizzando il caso a modello singolo (model3d) e quello multiplo (models3d).
+export function getModels(a: Aircraft): Model3DEntry[] {
+  if (a.models3d && a.models3d.length > 0) return a.models3d;
+  if (a.model3d) return [{ label: a.name, url: a.model3d, credit: a.model3dCredit }];
+  return [];
+}
+
+export type { Aircraft, Model3DEntry };

@@ -71,6 +71,14 @@ export interface TimelineItem {
   media?: TimelineMedia; // foto storica opzionale per la tappa
 }
 
+// Una variante di modello 3D (es. "Base", "F-16I Sufa"): consente di mostrare
+// più modelli per lo stesso aereo con uno switcher nella sezione "Modello 3D".
+export interface Model3DEntry {
+  label: string;
+  url: string; // percorso al GLB in /public
+  credit?: { author: string; url: string; license: string };
+}
+
 export interface Aircraft {
   // catalogo
   slug: string;
@@ -98,6 +106,9 @@ export interface Aircraft {
   variants: VariantCard[];
   timeline: TimelineItem[];
   facts: FactItem[];
-  model3d?: string; // percorso al file GLB in /public (es. /models/f-14-tomcat.glb)
+  // modello 3D: singolo (model3d/model3dCredit) oppure più varianti (models3d, con switcher).
+  // Usa l'helper getModels() per ottenere sempre una lista normalizzata.
+  model3d?: string; // percorso al file GLB in /public (es. /models/USA/f-14-tomcat.glb)
   model3dCredit?: { author: string; url: string; license: string };
+  models3d?: Model3DEntry[]; // varianti multiple dello stesso aereo (es. F-16 base + F-16I)
 }

@@ -14,7 +14,7 @@ export const f35LightningII: Aircraft = {
   unitCost: "≈ 82 mln $ (2024)",
   thumb: "/images/aircraft/f-35-lightning-ii/f35a-flight.jpg",
   thumbAlt: "Un F-35A Lightning II in volo",
-  model3d: "/models/EU/f-35_lightning_ii.glb",
+  model3d: "/models/USA/f-35_lightning_ii.glb",
   model3dCredit: {
     author: "bohmerang",
     url: "https://sketchfab.com/3d-models/f-35-lightning-ii-fighter-jet-free-b1ab1c0090e34b0fbfe667e706023e6d",
