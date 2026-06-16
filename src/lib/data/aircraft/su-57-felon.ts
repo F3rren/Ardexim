@@ -12,6 +12,7 @@ export const su57Felon: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 2",
   unitCost: "≈ 2,2 mld ₽ (2018)",
+  profile: { velocita: 88, raggio: 80, agilita: 92, carico: 70, furtivita: 80 },
   thumb: "/images/aircraft/su-57-felon/su57-zhuhai-2024.jpg",
   thumbAlt: "Sukhoi Su-57 Felon in dimostrazione al salone di Zhuhai 2024",
   model3d: "/models/RUS/sukhoi_su-57_felon.glb",

@@ -12,6 +12,7 @@ export const b2Spirit: Aircraft = {
   status: "in-servizio",
   topSpeed: "~Mach 0.95",
   unitCost: "≈ 2,1 mld $ (1997)",
+  profile: { velocita: 25, raggio: 100, agilita: 10, carico: 95, furtivita: 98 },
   thumb: "/images/aircraft/b-2-spirit/b2-flight.jpg",
   thumbAlt: "Bombardiere stealth B-2 Spirit in volo",
   model3d: "/models/USA/northrop_grumman_b-2_spirit.glb",

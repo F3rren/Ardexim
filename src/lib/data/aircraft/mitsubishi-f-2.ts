@@ -12,6 +12,7 @@ export const mitsubishiF2 = {
   status: "in-servizio",
   topSpeed: "Mach 2",
   unitCost: "≈ 12 mld ¥",
+  profile: { velocita: 80, raggio: 60, agilita: 78, carico: 60, furtivita: 18 },
   thumb: "/images/aircraft/mitsubishi-f-2/f2-flight.jpg",
   thumbAlt: "Un Mitsubishi F-2 della JASDF in volo",
   model3d: "/models/JAP/mitsubishi_f-2_-_fighter_jet.glb",

@@ -71,6 +71,15 @@ export interface TimelineItem {
   media?: TimelineMedia; // foto storica opzionale per la tappa
 }
 
+// Valutazione indicativa (0-100) su 5 assi, per il radar "profilo" e i confronti.
+export interface AircraftProfile {
+  velocita: number;
+  raggio: number;
+  agilita: number;
+  carico: number;
+  furtivita: number;
+}
+
 // Una variante di modello 3D (es. "Base", "F-16I Sufa"): consente di mostrare
 // più modelli per lo stesso aereo con uno switcher nella sezione "Modello 3D".
 export interface Model3DEntry {
@@ -91,6 +100,7 @@ export interface Aircraft {
   status: "in-servizio" | "ritirato";
   topSpeed: string;
   unitCost: string; // costo unitario indicativo (valore + anno/base, es. "≈ 38 mln $ (1998)")
+  profile?: AircraftProfile; // valutazione 0-100 su 5 assi per il radar "profilo" / confronto
   thumb: string;
   thumbAlt: string;
   // dettaglio

@@ -12,6 +12,7 @@ export const mig29Fulcrum: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 2.25",
   unitCost: "≈ 29 mln $ (export)",
+  profile: { velocita: 90, raggio: 35, agilita: 90, carico: 45, furtivita: 10 },
   thumb: "/images/aircraft/mig-29-fulcrum/mig29-flight.jpg",
   thumbAlt: "Un MiG-29 Fulcrum in volo",
   model3d: "/models/RUS/mig-29_-_fighter_jet.glb",

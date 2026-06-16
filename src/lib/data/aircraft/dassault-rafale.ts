@@ -12,6 +12,7 @@ export const dassaultRafale: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 1.8",
   unitCost: "≈ 70 mln € (2013)",
+  profile: { velocita: 82, raggio: 65, agilita: 88, carico: 75, furtivita: 35 },
   thumb: "/images/aircraft/dassault-rafale/rafale-flight.jpg",
   thumbAlt: "Dassault Rafale in volo",
   model3d: "/models/EU/dassault_rafale.glb",

@@ -12,6 +12,7 @@ export const fa18SuperHornet: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 1.8",
   unitCost: "≈ 67 mln $ (2021)",
+  profile: { velocita: 72, raggio: 55, agilita: 72, carico: 70, furtivita: 25 },
   thumb: "/images/aircraft/fa-18-super-hornet/fa18f-flight.jpg",
   thumbAlt: "Un Boeing F/A-18F Super Hornet in volo",
   model3d: "/models/USA/boeing_fa-18f_super_hornet.glb",

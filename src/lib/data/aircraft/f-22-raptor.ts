@@ -12,6 +12,7 @@ export const f22Raptor: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 2.25",
   unitCost: "≈ 150 mln $ (2009)",
+  profile: { velocita: 92, raggio: 60, agilita: 95, carico: 45, furtivita: 95 },
   thumb: "/images/aircraft/f-22-raptor/f22-flight.jpg",
   thumbAlt: "Un F-22 Raptor in volo",
   model3d: "/models/USA/f-22_raptor.glb",

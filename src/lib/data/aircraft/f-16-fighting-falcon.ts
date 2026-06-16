@@ -12,6 +12,7 @@ export const f16FightingFalcon: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 2",
   unitCost: "≈ 19 mln $ (1998)",
+  profile: { velocita: 78, raggio: 45, agilita: 88, carico: 60, furtivita: 15 },
   thumb: "/images/aircraft/f-16-fighting-falcon/f16-flight.jpg",
   thumbAlt: "F-16 Fighting Falcon dell'U.S. Air Force in volo",
   model3d: "/models/USA/f-16_fighting_falcon.glb",

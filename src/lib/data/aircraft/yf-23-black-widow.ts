@@ -12,6 +12,7 @@ export const yf23BlackWidow = {
   status: "ritirato",
   topSpeed: "~Mach 2.2",
   unitCost: "n/d · prototipo",
+  profile: { velocita: 95, raggio: 70, agilita: 70, carico: 45, furtivita: 97 },
   thumb: "/images/aircraft/yf-23-black-widow/yf23-flight.jpg",
   thumbAlt: "Il prototipo Northrop YF-23 Black Widow II in volo",
   model3d: "/models/USA/yf-23_black_widow_ii.glb",

@@ -12,6 +12,7 @@ export const jas39Gripen = {
   status: "in-servizio",
   topSpeed: "Mach 2",
   unitCost: "≈ 85 mln $ (Gripen E)",
+  profile: { velocita: 80, raggio: 45, agilita: 85, carico: 50, furtivita: 25 },
   thumb: "/images/aircraft/jas-39-gripen/gripen-flight.jpg",
   thumbAlt: "Un Saab JAS 39 Gripen dell'aeronautica svedese in volo",
   model3d: "/models/SWD/saab_jas_39_gripen_-_fighter_jet.glb",

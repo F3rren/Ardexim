@@ -12,6 +12,7 @@ export const mig35 = {
   status: "in-servizio",
   topSpeed: "Mach 2.25",
   unitCost: "≈ 40 mln $ (export)",
+  profile: { velocita: 88, raggio: 50, agilita: 88, carico: 60, furtivita: 20 },
   thumb: "/images/aircraft/mig-35/mig35-flight.jpg",
   thumbAlt: "Un MiG-35 in dimostrazione al salone MAKS",
   model3d: "/models/RUS/mig-35_-_fighter_jet.glb",

@@ -12,6 +12,7 @@ export const eurofighterTyphoon: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 2",
   unitCost: "≈ 90 mln € (2013)",
+  profile: { velocita: 90, raggio: 60, agilita: 90, carico: 70, furtivita: 30 },
   thumb: "/images/aircraft/eurofighter-typhoon/typhoon-italian-af.jpg",
   thumbAlt: "Eurofighter Typhoon dell'Aeronautica Militare italiana in volo",
   model3d: "/models/EU/eurofighter_typhoon.glb",

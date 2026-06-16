@@ -12,6 +12,7 @@ export const a10Thunderbolt = {
   status: "in-servizio",
   topSpeed: "~700 km/h",
   unitCost: "≈ 19 mln $ (1994)",
+  profile: { velocita: 18, raggio: 50, agilita: 40, carico: 75, furtivita: 5 },
   thumb: "/images/aircraft/a-10-thunderbolt-ii/a10-flight.jpg",
   thumbAlt: "Un A-10 Thunderbolt II «Warthog» in volo",
   model3d: "/models/USA/a-10_thunderbolt_ii.glb",

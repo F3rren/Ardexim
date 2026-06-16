@@ -12,6 +12,7 @@ export const su35 = {
   status: "in-servizio",
   topSpeed: "Mach 2.25",
   unitCost: "≈ 2 mld ₽",
+  profile: { velocita: 92, raggio: 85, agilita: 96, carico: 75, furtivita: 22 },
   thumb: "/images/aircraft/su-35/su35-flight.jpg",
   thumbAlt: "Un Sukhoi Su-35 in volo",
   model3d: "/models/RUS/sukhoi_su-35_-_fighter_jet.glb",

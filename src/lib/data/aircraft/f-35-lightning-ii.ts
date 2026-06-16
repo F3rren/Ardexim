@@ -12,6 +12,7 @@ export const f35LightningII: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 1.6",
   unitCost: "≈ 82 mln $ (2024)",
+  profile: { velocita: 70, raggio: 70, agilita: 70, carico: 65, furtivita: 92 },
   thumb: "/images/aircraft/f-35-lightning-ii/f35a-flight.jpg",
   thumbAlt: "Un F-35A Lightning II in volo",
   model3d: "/models/USA/f-35_lightning_ii.glb",

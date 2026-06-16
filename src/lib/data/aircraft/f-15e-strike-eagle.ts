@@ -12,6 +12,7 @@ export const f15eStrikeEagle: Aircraft = {
   status: "in-servizio",
   topSpeed: "Mach 2.5",
   unitCost: "≈ 88 mln $ (1998)",
+  profile: { velocita: 90, raggio: 75, agilita: 70, carico: 85, furtivita: 12 },
   thumb: "/images/aircraft/f-15e-strike-eagle/f15e-banks-tanker.jpg",
   thumbAlt: "F-15E Strike Eagle vira allontanandosi da un'aerocisterna",
   model3d: "/models/USA/f-15e_strike_eagle.glb",

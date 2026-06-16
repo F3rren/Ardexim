@@ -7,6 +7,7 @@ import Hero from "@/components/sections/Hero";
 import Overview from "@/components/sections/Overview";
 import Model3D from "@/components/sections/Model3D";
 import Specs from "@/components/sections/Specs";
+import Profile from "@/components/sections/Profile";
 import Systems from "@/components/sections/Systems";
 import Armament from "@/components/sections/Armament";
 import Evolution from "@/components/sections/Evolution";
@@ -48,6 +49,7 @@ export default async function AircraftPage({
     { id: "overview", label: "Overview" },
     ...(a.model3d ? [{ id: "modello", label: "Modello 3D" }] : []),
     { id: "specs", label: "Specifiche" },
+    ...(a.profile ? [{ id: "profilo", label: "Profilo" }] : []),
     { id: "systems", label: "Sistemi" },
     { id: "armament", label: "Armi" },
     { id: "history", label: "Evoluzione" },
@@ -64,6 +66,7 @@ export default async function AircraftPage({
         <Overview aircraft={a} />
         <Model3D aircraft={a} />
         <Specs aircraft={a} />
+        <Profile aircraft={a} />
         <Systems aircraft={a} />
         <Armament aircraft={a} />
         <Evolution aircraft={a} />
