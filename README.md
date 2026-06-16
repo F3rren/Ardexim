@@ -74,6 +74,8 @@ Fotografie storiche via Wikimedia Commons:
 - **Dassault Rafale**: Rafale in volo — *Clemens Vasters*, **CC BY 2.0**; dimostratore Rafale A a Farnborough (1986) —
   *Dick Gilbert*, **CC BY 2.0**; lancio del Rafale M da portaerei — *U.S. Navy*, **pubblico dominio**;
   Rafale C al Paris Air Show 2025 — *Kilyann Le Hen*, **CC BY 4.0**.
+- **F-35 Lightning II**: F-35A in volo, trio A/B/C su Eglin (2014), F-35B in atterraggio verticale, F-35 italiani
+  e display a Dubai (2023) — *U.S. Air Force / U.S. Navy*, **pubblico dominio**.
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -97,6 +99,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **B-2 Spirit** — «[Northrop Grumman B-2 Spirit - FREE](https://sketchfab.com/3d-models/northrop-grumman-b-2-spirit-free-9cd6b00813c04401a5427ae71b7a0cdc)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **Dassault Rafale (M)** — «[Dassault Rafale (M) - Fighter Jet - Free](https://sketchfab.com/3d-models/dassault-rafale-m-fighter-jet-free-0abf2465adb04bc8bc638688fa54ce21)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **F-35 Lightning II** — «[F-35 Lightning II - Fighter Jet - Free](https://sketchfab.com/3d-models/f-35-lightning-ii-fighter-jet-free-b1ab1c0090e34b0fbfe667e706023e6d)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.
