@@ -92,6 +92,9 @@ Fotografie storiche via Wikimedia Commons:
 - **Su-35 Flanker-E**: Su-35 in volo — *Aleksandr Markin* (CC BY-SA 2.0); al MAKS — *Vitaly V. Kuzmin* (CC BY-SA 4.0);
   Su-35S russo — *Aeroprints.com* (CC BY-SA 3.0); con Su-34 e T-50 — *Alex Beltyukov* (CC BY-SA 3.0); scorta a un
   Tu-95 — *Min. Difesa Giappone* (CC BY 4.0).
+- **Saab JAS 39 Gripen**: Gripen svedese — *simon butler* (CC BY 2.0); decollo — *Nathan150* (CC BY 2.0); Gripen E —
+  *Rhk111* (CC BY-SA 4.0); Gripen ceco — *Milan Nykodym* (CC BY-SA 2.0); con un B-52 su Stoccolma (2025) —
+  *F. Fouganthin* (CC BY 4.0).
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -131,6 +134,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **MiG-35 Fulcrum-F** — «[MiG-35 - Fighter Jet - Free](https://sketchfab.com/3d-models/mig-35-fighter-jet-free-1dcea306e8a14ed4ab4d11a819cb6676)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **Su-35 Flanker-E** — «[Sukhoi Su-35 - Fighter Jet - Free](https://sketchfab.com/3d-models/sukhoi-su-35-fighter-jet-free-3213a404e5cb4fb68f778b9acae5109c)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **Saab JAS 39 Gripen** — «[Saab JAS 39 Gripen - Fighter Jet - Free](https://sketchfab.com/3d-models/saab-jas-39-gripen-fighter-jet-free-03d4f4f0f7e94f469299ba7db4c707c4)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.

@@ -50,6 +50,17 @@ const FRANCIA: NationTheme = {
   },
 };
 
+// Svezia (Saab Gripen): giallo/blu della bandiera. Il giallo è più acceso/limone
+// del bronzo-oro USA e il secondario è blu (non teal), per distinguere le due.
+const SVEZIA: NationTheme = {
+  label: "Svezia",
+  vars: {
+    "--color-gold": "#e8a200", // giallo-oro svedese (accento primario)
+    "--color-goldbr": "#ffcf33", // giallo limone brillante
+    "--color-cyan": "#2f6fd6", // blu svedese (accento secondario)
+  },
+};
+
 const DEFAULT = USA;
 
 // chiave = campo aircraft.country
@@ -58,6 +69,7 @@ const byCountry: Record<string, NationTheme> = {
   Russia: RUSSIA,
   Europa: EUROPA,
   Francia: FRANCIA,
+  Svezia: SVEZIA,
 };
 
 export function nationTheme(country: string): NationTheme {
