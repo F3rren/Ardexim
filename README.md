@@ -85,6 +85,8 @@ Fotografie storiche via Wikimedia Commons:
   *Mark Kent*, **CC BY-SA 2.0**; MiG-29 ucraino — *Min. Difesa Ucraina*, **CC BY 4.0**.
 - **A-10 Thunderbolt II**: in volo, «gun run» col GAU-8, Desert Storm (1991), missione in Afghanistan e A-10C —
   *U.S. Air Force*, **pubblico dominio**.
+- **YF-23 Black Widow II**: prototipo in volo (NASA) e i due prototipi in formazione/volo — *NASA / U.S. Air Force*,
+  **pubblico dominio**; esemplare in museo — *James St. John*, **CC BY 2.0**.
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -118,6 +120,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **MiG-29 Fulcrum** — «[MiG-29 - Fighter Jet - Free](https://sketchfab.com/3d-models/mig-29-fighter-jet-free-0a21787096244220b246ec8747e7b09c)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **A-10 Thunderbolt II** — «[A-10 Thunderbolt II - Free](https://sketchfab.com/3d-models/a-10-thunderbolt-ii-free-f297968397534b59bd41fe989497ffcb)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **YF-23 Black Widow II** — «[YF-23 Black Widow II - Fighter Jet - FREE](https://sketchfab.com/3d-models/yf-23-black-widow-ii-fighter-jet-free-f61b51dbfb684db6acf14435bac8cd3c)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.
