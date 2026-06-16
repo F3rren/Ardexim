@@ -1,11 +1,12 @@
-# Catalogo Aerei Militari
+# Ardexim
 
-Catalogo interattivo di aerei militari, costruito con **Next.js**. La home è un
+**Ardexim** è un catalogo interattivo di aerei militari, costruito con **Next.js**. La home è un
 **glossario** ricercabile; ogni aereo ha una **pagina dedicata** con specifiche,
-storia, armamento, varianti, galleria storica e un **modello 3D interattivo**.
+storia, armamento, varianti, evoluzione storica e un **modello 3D interattivo**.
 
-Primo aereo completo: **Grumman F-14 Tomcat**. Il progetto è pensato per crescere:
-aggiungere un aereo = aggiungere un file dati (+ eventuale modello 3D).
+Il catalogo raccoglie velivoli di più nazioni (USA, Russia, Europa, Francia, Svezia, Giappone),
+ciascuno con la propria palette colore. È pensato per crescere: aggiungere un aereo = aggiungere
+un file dati (+ eventuale modello 3D).
 
 🔗 **Live (GitHub Pages):** https://f3rren.github.io/f14-tomcat/
 
