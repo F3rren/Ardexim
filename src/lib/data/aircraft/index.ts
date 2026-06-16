@@ -8,6 +8,7 @@ import { b2Spirit } from "./b-2-spirit";
 import { dassaultRafale } from "./dassault-rafale";
 import { f35LightningII } from "./f-35-lightning-ii";
 import { f22Raptor } from "./f-22-raptor";
+import { fa18SuperHornet } from "./fa-18-super-hornet";
 
 // Registro degli aerei: singola fonte di verità.
 // Aggiungere un aereo = importare il suo file e aggiungerlo qui.
@@ -21,6 +22,7 @@ export const aircraft: Aircraft[] = [
   dassaultRafale,
   f35LightningII,
   f22Raptor,
+  fa18SuperHornet,
 ];
 
 export function getAircraftBySlug(slug: string): Aircraft | undefined {

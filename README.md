@@ -78,6 +78,8 @@ Fotografie storiche via Wikimedia Commons:
   e display a Dubai (2023) — *U.S. Air Force / U.S. Navy*, **pubblico dominio**.
 - **F-22 Raptor**: in volo, prototipo YF-22, scia di vapore, preparazione al volo di combattimento e al crepuscolo —
   *U.S. Air Force / Department of Defense*, **pubblico dominio**.
+- **F/A-18 Super Hornet**: F/A-18F in volo — *Chris Phutully*, **CC BY 2.0**; lancio dell'F/A-18E, ponte di volo,
+  EA-18G Growler e formazione — *U.S. Navy*, **pubblico dominio**.
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -105,6 +107,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **F-35 Lightning II** — «[F-35 Lightning II - Fighter Jet - Free](https://sketchfab.com/3d-models/f-35-lightning-ii-fighter-jet-free-b1ab1c0090e34b0fbfe667e706023e6d)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **F-22 Raptor** — «[F-22 Raptor - Fighter Jet - Free](https://sketchfab.com/3d-models/f-22-raptor-fighter-jet-free-508de5c48845456bb033fb267ebe1d1e)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **F/A-18F Super Hornet** — «[Boeing F/A-18F Super Hornet - Free](https://sketchfab.com/3d-models/boeing-fa-18f-super-hornet-free-447caa975f534554a83f70f0877b73fb)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.
