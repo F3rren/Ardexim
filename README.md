@@ -83,6 +83,8 @@ Fotografie storiche via Wikimedia Commons:
 - **MiG-29 Fulcrum**: MiG-29 in volo — *Alan Wilson*, **CC BY-SA 2.0**; MiG-29 in manovra (MAKS) — *Vitaly V. Kuzmin*,
   **CC BY-SA 4.0**; MiG-29 tedesco con F-15C (2003) — *U.S. Air Force*, **pubblico dominio**; MiG-29 polacco —
   *Mark Kent*, **CC BY-SA 2.0**; MiG-29 ucraino — *Min. Difesa Ucraina*, **CC BY 4.0**.
+- **A-10 Thunderbolt II**: in volo, «gun run» col GAU-8, Desert Storm (1991), missione in Afghanistan e A-10C —
+  *U.S. Air Force*, **pubblico dominio**.
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -114,6 +116,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **F/A-18F Super Hornet** — «[Boeing F/A-18F Super Hornet - Free](https://sketchfab.com/3d-models/boeing-fa-18f-super-hornet-free-447caa975f534554a83f70f0877b73fb)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **MiG-29 Fulcrum** — «[MiG-29 - Fighter Jet - Free](https://sketchfab.com/3d-models/mig-29-fighter-jet-free-0a21787096244220b246ec8747e7b09c)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **A-10 Thunderbolt II** — «[A-10 Thunderbolt II - Free](https://sketchfab.com/3d-models/a-10-thunderbolt-ii-free-f297968397534b59bd41fe989497ffcb)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.
