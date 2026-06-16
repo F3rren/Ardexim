@@ -43,7 +43,7 @@ export default function Navbar({
     >
       <Link href="/" className="flex items-center gap-3 font-display font-semibold uppercase text-xl tracking-[0.04em]">
         <Icon name="bolt" className="w-[26px] h-[26px] text-gold" strokeWidth={1.6} />
-        Aero<span className="text-gold">Codex</span>
+        Ard<span className="text-gold">exim</span>
         {title && (
           <span className="font-mono text-[11px] text-gold border border-line rounded-md px-[7px] py-[3px] tracking-[0.1em] normal-case">
             {title}

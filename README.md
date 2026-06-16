@@ -8,7 +8,7 @@ Il catalogo raccoglie velivoli di più nazioni (USA, Russia, Europa, Francia, Sv
 ciascuno con la propria palette colore. È pensato per crescere: aggiungere un aereo = aggiungere
 un file dati (+ eventuale modello 3D).
 
-🔗 **Live (GitHub Pages):** https://f3rren.github.io/f14-tomcat/
+🔗 **Live (GitHub Pages):** https://f3rren.github.io/Ardexim/
 
 ## Stack
 
@@ -77,7 +77,7 @@ non compare. L'helper `getModels()` normalizza i due casi.
 ## Deploy
 
 Push su `main` → GitHub Actions (`.github/workflows/deploy.yml`) builda l'export e
-pubblica su GitHub Pages. `basePath`/`assetPrefix` valgono `/f14-tomcat` solo in produzione.
+pubblica su GitHub Pages. `basePath`/`assetPrefix` valgono `/Ardexim` solo in produzione.
 
 ## Crediti immagini
 

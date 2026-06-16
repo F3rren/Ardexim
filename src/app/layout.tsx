@@ -24,17 +24,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://f3rren.github.io/f14-tomcat"),
+  metadataBase: new URL("https://f3rren.github.io/Ardexim"),
   title: {
-    default: "Catalogo Aerei Militari",
-    template: "%s · Catalogo Aerei Militari",
+    default: "Ardexim · Catalogo aerei militari",
+    template: "%s · Ardexim",
   },
   description:
-    "Catalogo interattivo di aerei militari: specifiche, storia, armamento e modelli 3D. Primo aereo: Grumman F-14 Tomcat.",
+    "Ardexim: catalogo interattivo di aerei militari con specifiche, storia, armamento, varianti e modelli 3D.",
   openGraph: {
     type: "website",
     locale: "it_IT",
-    siteName: "Catalogo Aerei Militari",
+    siteName: "Ardexim",
   },
 };
 
