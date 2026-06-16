@@ -87,6 +87,8 @@ Fotografie storiche via Wikimedia Commons:
   *U.S. Air Force*, **pubblico dominio**.
 - **YF-23 Black Widow II**: prototipo in volo (NASA) e i due prototipi in formazione/volo — *NASA / U.S. Air Force*,
   **pubblico dominio**; esemplare in museo — *James St. John*, **CC BY 2.0**.
+- **MiG-35 Fulcrum-F**: MiG-35 ai saloni MAKS 2009/2011/2019 — *Vitaly V. Kuzmin* (CC BY-SA 4.0), *A. Ermakov*
+  (CC BY-SA 4.0), *Nockson* (CC BY-SA 3.0).
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -122,6 +124,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **A-10 Thunderbolt II** — «[A-10 Thunderbolt II - Free](https://sketchfab.com/3d-models/a-10-thunderbolt-ii-free-f297968397534b59bd41fe989497ffcb)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **YF-23 Black Widow II** — «[YF-23 Black Widow II - Fighter Jet - FREE](https://sketchfab.com/3d-models/yf-23-black-widow-ii-fighter-jet-free-f61b51dbfb684db6acf14435bac8cd3c)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **MiG-35 Fulcrum-F** — «[MiG-35 - Fighter Jet - Free](https://sketchfab.com/3d-models/mig-35-fighter-jet-free-1dcea306e8a14ed4ab4d11a819cb6676)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.

@@ -12,6 +12,7 @@ import { fa18SuperHornet } from "./fa-18-super-hornet";
 import { mig29Fulcrum } from "./mig-29-fulcrum";
 import { a10Thunderbolt } from "./a-10-thunderbolt-ii";
 import { yf23BlackWidow } from "./yf-23-black-widow";
+import { mig35 } from "./mig-35";
 
 // Registro degli aerei: singola fonte di verità.
 // Aggiungere un aereo = importare il suo file e aggiungerlo qui.
@@ -29,6 +30,7 @@ export const aircraft: Aircraft[] = [
   mig29Fulcrum,
   a10Thunderbolt,
   yf23BlackWidow,
+  mig35,
 ];
 
 export function getAircraftBySlug(slug: string): Aircraft | undefined {
