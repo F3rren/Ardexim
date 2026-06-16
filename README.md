@@ -95,6 +95,8 @@ Fotografie storiche via Wikimedia Commons:
 - **Saab JAS 39 Gripen**: Gripen svedese — *simon butler* (CC BY 2.0); decollo — *Nathan150* (CC BY 2.0); Gripen E —
   *Rhk111* (CC BY-SA 4.0); Gripen ceco — *Milan Nykodym* (CC BY-SA 2.0); con un B-52 su Stoccolma (2025) —
   *F. Fouganthin* (CC BY 4.0).
+- **Mitsubishi F-2**: F-2 in volo — *Jerry Gunner* (CC BY 2.0); F-2 della JASDF — *航空自衛隊/JASDF* (CC BY 4.0);
+  formazioni JASDF (anche al tramonto) — *U.S. DoD / Min. Difesa Giappone* (pubblico dominio).
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -136,6 +138,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 - **Su-35 Flanker-E** — «[Sukhoi Su-35 - Fighter Jet - Free](https://sketchfab.com/3d-models/sukhoi-su-35-fighter-jet-free-3213a404e5cb4fb68f778b9acae5109c)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **Saab JAS 39 Gripen** — «[Saab JAS 39 Gripen - Fighter Jet - Free](https://sketchfab.com/3d-models/saab-jas-39-gripen-fighter-jet-free-03d4f4f0f7e94f469299ba7db4c707c4)»
+  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **Mitsubishi F-2** — «[Mitsubishi F-2 - Fighter Jet - Free](https://sketchfab.com/3d-models/mitsubishi-f-2-fighter-jet-free-d3d7244554974f499b106e6c11fe3aaf)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 
 > Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.

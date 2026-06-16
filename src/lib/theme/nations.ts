@@ -61,6 +61,17 @@ const SVEZIA: NationTheme = {
   },
 };
 
+// Giappone (Mitsubishi F-2): bianco/acciaio (il campo bianco della bandiera).
+// Niente rosso come accento: confliggerebbe con la Russia e con lo stato "ritirato".
+const GIAPPONE: NationTheme = {
+  label: "Giappone",
+  vars: {
+    "--color-gold": "#c7ced8", // acciaio chiaro (accento primario)
+    "--color-goldbr": "#eef2f7", // bianco
+    "--color-cyan": "#4f9fd6", // azzurro acciaio (accento secondario, freddo)
+  },
+};
+
 const DEFAULT = USA;
 
 // chiave = campo aircraft.country
@@ -70,6 +81,7 @@ const byCountry: Record<string, NationTheme> = {
   Europa: EUROPA,
   Francia: FRANCIA,
   Svezia: SVEZIA,
+  Giappone: GIAPPONE,
 };
 
 export function nationTheme(country: string): NationTheme {
