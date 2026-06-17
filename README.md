@@ -126,6 +126,8 @@ Fotografie storiche via Wikimedia Commons:
   formazioni JASDF (anche al tramonto) — *U.S. DoD / Min. Difesa Giappone* (pubblico dominio).
 - **Panavia Tornado**: Tornado italiani in volo (1987), tedesco, saudita (1991) e GR4 RAF — *U.S. DoD / U.S. Air Force*
   (pubblico dominio); Tornado IDS dell'Aeronautica italiana — *Ronnie Macdonald* (CC BY 2.0).
+- **F/A-18 Hornet**: barriera del suono (1999), lancio da portaerei, F/A-18C del VFA-136 (1992) e Hornet finlandese —
+  *U.S. Navy / U.S. Air National Guard* (pubblico dominio); CF-18 canadese — *Erica* (CC BY 2.0).
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -172,6 +174,8 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **Panavia Tornado** — «[Panavia Tornado "MiG Eater"](https://sketchfab.com/3d-models/panavia-tornado-mig-eater-05e70ba76b82408abb347c2e0f2c69eb)»
   di **42manako** (Sketchfab), licenza **CC BY 4.0**.
+- **F/A-18 Hornet** — «[F/A-18C Late with AGM-65G](https://sketchfab.com/3d-models/fa-18c-late-with-agm-65g-a9eeeea180484f48b50cdfa14002ea6a)»
+  di **Jeyhun1985** (Sketchfab), licenza **CC BY 4.0**.
 
 > Nota licenza: quasi tutti i modelli 3D (bohmerang) sono **CC BY-NC-SA 4.0** — **non commerciali (NC)** e
 > **ShareAlike (SA)**; il Tornado (42manako) è **CC BY 4.0**. Il vincolo non commerciale dell'intero sito resta
