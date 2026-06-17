@@ -124,6 +124,8 @@ Fotografie storiche via Wikimedia Commons:
   *F. Fouganthin* (CC BY 4.0).
 - **Mitsubishi F-2**: F-2 in volo — *Jerry Gunner* (CC BY 2.0); F-2 della JASDF — *航空自衛隊/JASDF* (CC BY 4.0);
   formazioni JASDF (anche al tramonto) — *U.S. DoD / Min. Difesa Giappone* (pubblico dominio).
+- **Panavia Tornado**: Tornado italiani in volo (1987), tedesco, saudita (1991) e GR4 RAF — *U.S. DoD / U.S. Air Force*
+  (pubblico dominio); Tornado IDS dell'Aeronautica italiana — *Ronnie Macdonald* (CC BY 2.0).
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
@@ -168,8 +170,12 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
 - **Mitsubishi F-2** — «[Mitsubishi F-2 - Fighter Jet - Free](https://sketchfab.com/3d-models/mitsubishi-f-2-fighter-jet-free-d3d7244554974f499b106e6c11fe3aaf)»
   di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
+- **Panavia Tornado** — «[Panavia Tornado "MiG Eater"](https://sketchfab.com/3d-models/panavia-tornado-mig-eater-05e70ba76b82408abb347c2e0f2c69eb)»
+  di **42manako** (Sketchfab), licenza **CC BY 4.0**.
 
-> Nota licenza: i modelli 3D sono **non commerciali (NC)** e **ShareAlike (SA)**.
+> Nota licenza: quasi tutti i modelli 3D (bohmerang) sono **CC BY-NC-SA 4.0** — **non commerciali (NC)** e
+> **ShareAlike (SA)**; il Tornado (42manako) è **CC BY 4.0**. Il vincolo non commerciale dell'intero sito resta
+> per via dei modelli NC.
 > Questo progetto resta gratuito e a scopo divulgativo (uso non commerciale).
 
 ## Licenza
