@@ -3,6 +3,7 @@ import { asset } from "@/lib/basePath";
 import Reveal from "@/components/ui/Reveal";
 import Badge from "@/components/ui/Badge";
 import Icon from "@/components/ui/Icon";
+import HeroFx from "@/components/sections/HeroFx";
 
 export default function Hero({ aircraft }: { aircraft: Aircraft }) {
   const [first, ...rest] = aircraft.name.split(" ");
@@ -27,6 +28,9 @@ export default function Hero({ aircraft }: { aircraft: Aircraft }) {
               "linear-gradient(to top, var(--color-bg) 1%, transparent 46%), linear-gradient(to right, rgba(10,9,8,0.72), transparent 58%)",
           }}
         />
+
+        {/* overlay HUD animato (scanline, scansione, mirini, sigla in filigrana) */}
+        <HeroFx code={first} />
 
         {/* contenuto testuale (drag passa attraverso, tranne i bottoni) */}
         <div className="absolute inset-0 z-[2] pointer-events-none">

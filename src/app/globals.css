@@ -106,7 +106,20 @@ body::before {
 }
 .dot-live { animation: pulse-dot 2.2s infinite; }
 
+/* ticker/marquee scorrevole (designazioni aerei) */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.anim-marquee {
+  animation: marquee 46s linear infinite;
+}
+.anim-marquee:hover {
+  animation-play-state: paused;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .dot-live { animation: none; }
+  .anim-marquee { animation: none; }
 }
