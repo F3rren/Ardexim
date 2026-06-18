@@ -88,6 +88,9 @@ Fotografie storiche via Wikimedia Commons:
 - **F-15E Strike Eagle — U.S. Air Force, pubblico dominio**: vira da un'aerocisterna, decollo a pieno carico,
   formazione di Desert Storm (1991), sui cieli dell'Afghanistan, in missione sull'Iraq (2004),
   F-15EX Eagle II.
+- **F-15 Eagle (A/C) — U.S. Air Force / Department of Defense, pubblico dominio**: F-15C che lancia un AIM-7
+  Sparrow, coppia di Eagle in volo, F-15 Streak Eagle, vista dal basso della pianta alare e formazione di
+  Desert Storm (1991).
 - **Su-57 Felon**: T-50 «52» (2013) — *Alan Wilson*, **CC BY-SA 2.0**; T-50 al MAKS 2013 — *Doomych*,
   **pubblico dominio**; Su-57 al forum Army-2022 — *Boevaya mashina*, **CC BY-SA 3.0**;
   Su-57 al salone di Zhuhai 2024 — *N509FZ*, **CC BY-SA 4.0**.
@@ -128,9 +131,13 @@ Fotografie storiche via Wikimedia Commons:
   (pubblico dominio); Tornado IDS dell'Aeronautica italiana — *Ronnie Macdonald* (CC BY 2.0).
 - **F/A-18 Hornet**: barriera del suono (1999), lancio da portaerei, F/A-18C del VFA-136 (1992) e Hornet finlandese —
   *U.S. Navy / U.S. Air National Guard* (pubblico dominio); CF-18 canadese — *Erica* (CC BY 2.0).
+- **F-111 Aardvark**: F-111F con Pave Tack e GBU-10 (1982), in rifornimento sul Mare del Nord ed EF-111A Raven —
+  *U.S. Air Force* (pubblico dominio); F-111 in volo — *archivio Convair / San Diego Air & Space Museum* (pubblico dominio);
+  «dump and burn» di un F-111C della RAAF — *Wal Nelowkin* (CC BY-SA 4.0).
 
 Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat),
 [Wikipedia (F-15E)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15E_Strike_Eagle),
+[Wikipedia (F-15)](https://en.wikipedia.org/wiki/McDonnell_Douglas_F-15_Eagle),
 [Wikipedia (Su-57)](https://en.wikipedia.org/wiki/Sukhoi_Su-57),
 [Wikipedia (Typhoon)](https://en.wikipedia.org/wiki/Eurofighter_Typhoon),
 [eurofighter.com](https://www.eurofighter.com/),
@@ -138,48 +145,54 @@ Fonti dati: [Wikipedia (F-14)](https://en.wikipedia.org/wiki/Grumman_F-14_Tomcat
 
 ## Crediti modelli 3D
 
-- **F-14 Tomcat** — «[F-14 Tomcat - Fighter Jet - Free](https://sketchfab.com/3d-models/f-14-tomcat-fighter-jet-free-497f77c311b5411d9b567d8707a81c33)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **F-15E Strike Eagle** — «[F-15E Strike Eagle - Fighter Jet - Free](https://sketchfab.com/3d-models/f-15e-strike-eagle-fighter-jet-free-fff7d75490474e9b964d90cc031c8d01)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **Su-57 Felon** — «[Sukhoi Su-57 Felon - Fighter Jet - Free](https://sketchfab.com/3d-models/sukhoi-su-57-felon-fighter-jet-free-59995d6f34ba4bb7990195be3a745fc5)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **Eurofighter Typhoon** — «[Eurofighter Typhoon - Fighter Jet - Free](https://sketchfab.com/3d-models/eurofighter-typhoon-fighter-jet-free-992bcc8987964ca09d55410330aa8579)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **F-16 Fighting Falcon** — «[F-16 Fighting Falcon - Fighter Jet - Free](https://sketchfab.com/3d-models/f-16-fighting-falcon-fighter-jet-free-f0b00989e5634764848ef2c235c64db5)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **B-2 Spirit** — «[Northrop Grumman B-2 Spirit - FREE](https://sketchfab.com/3d-models/northrop-grumman-b-2-spirit-free-9cd6b00813c04401a5427ae71b7a0cdc)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **Dassault Rafale (M)** — «[Dassault Rafale (M) - Fighter Jet - Free](https://sketchfab.com/3d-models/dassault-rafale-m-fighter-jet-free-0abf2465adb04bc8bc638688fa54ce21)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **F-35 Lightning II** — «[F-35 Lightning II - Fighter Jet - Free](https://sketchfab.com/3d-models/f-35-lightning-ii-fighter-jet-free-b1ab1c0090e34b0fbfe667e706023e6d)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **F-22 Raptor** — «[F-22 Raptor - Fighter Jet - Free](https://sketchfab.com/3d-models/f-22-raptor-fighter-jet-free-508de5c48845456bb033fb267ebe1d1e)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **F/A-18F Super Hornet** — «[Boeing F/A-18F Super Hornet - Free](https://sketchfab.com/3d-models/boeing-fa-18f-super-hornet-free-447caa975f534554a83f70f0877b73fb)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **MiG-29 Fulcrum** — «[MiG-29 - Fighter Jet - Free](https://sketchfab.com/3d-models/mig-29-fighter-jet-free-0a21787096244220b246ec8747e7b09c)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **A-10 Thunderbolt II** — «[A-10 Thunderbolt II - Free](https://sketchfab.com/3d-models/a-10-thunderbolt-ii-free-f297968397534b59bd41fe989497ffcb)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **YF-23 Black Widow II** — «[YF-23 Black Widow II - Fighter Jet - FREE](https://sketchfab.com/3d-models/yf-23-black-widow-ii-fighter-jet-free-f61b51dbfb684db6acf14435bac8cd3c)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **MiG-35 Fulcrum-F** — «[MiG-35 - Fighter Jet - Free](https://sketchfab.com/3d-models/mig-35-fighter-jet-free-1dcea306e8a14ed4ab4d11a819cb6676)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **Su-35 Flanker-E** — «[Sukhoi Su-35 - Fighter Jet - Free](https://sketchfab.com/3d-models/sukhoi-su-35-fighter-jet-free-3213a404e5cb4fb68f778b9acae5109c)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **Saab JAS 39 Gripen** — «[Saab JAS 39 Gripen - Fighter Jet - Free](https://sketchfab.com/3d-models/saab-jas-39-gripen-fighter-jet-free-03d4f4f0f7e94f469299ba7db4c707c4)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **Mitsubishi F-2** — «[Mitsubishi F-2 - Fighter Jet - Free](https://sketchfab.com/3d-models/mitsubishi-f-2-fighter-jet-free-d3d7244554974f499b106e6c11fe3aaf)»
-  di **bohmerang** (Sketchfab), licenza **CC BY-NC-SA 4.0**.
-- **Panavia Tornado** — «[Panavia Tornado "MiG Eater"](https://sketchfab.com/3d-models/panavia-tornado-mig-eater-05e70ba76b82408abb347c2e0f2c69eb)»
-  di **42manako** (Sketchfab), licenza **CC BY 4.0**.
-- **F/A-18 Hornet** — «[F/A-18C Late with AGM-65G](https://sketchfab.com/3d-models/fa-18c-late-with-agm-65g-a9eeeea180484f48b50cdfa14002ea6a)»
-  di **Jeyhun1985** (Sketchfab), licenza **CC BY 4.0**.
+Attribuzione nel formato standard di Sketchfab/Creative Commons (TASL — titolo, autore, sorgente, licenza):
+
+- **F-14 Tomcat** — "[F-14 Tomcat - Fighter Jet - Free](https://sketchfab.com/3d-models/f-14-tomcat-fighter-jet-free-497f77c311b5411d9b567d8707a81c33)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **F-15E Strike Eagle** — "[F-15E Strike Eagle - Fighter Jet - Free](https://sketchfab.com/3d-models/f-15e-strike-eagle-fighter-jet-free-fff7d75490474e9b964d90cc031c8d01)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **F-15 Eagle (F-15C)** — "[F-15C MSIP II Eagle (Custom) (War Thunder)](https://sketchfab.com/3d-models/f-15c-msip-ii-eagle-custom-war-thunder-eb50771c2a43473583a6784716b42587)" by KojfDiscord is licensed under
+  [CC Attribution](https://creativecommons.org/licenses/by/4.0/).
+- **Su-57 Felon** — "[Sukhoi Su-57 Felon - Fighter Jet - Free](https://sketchfab.com/3d-models/sukhoi-su-57-felon-fighter-jet-free-59995d6f34ba4bb7990195be3a745fc5)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **Eurofighter Typhoon** — "[Eurofighter Typhoon - Fighter Jet - Free](https://sketchfab.com/3d-models/eurofighter-typhoon-fighter-jet-free-992bcc8987964ca09d55410330aa8579)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **F-16 Fighting Falcon** — "[F-16 Fighting Falcon - Fighter Jet - Free](https://sketchfab.com/3d-models/f-16-fighting-falcon-fighter-jet-free-f0b00989e5634764848ef2c235c64db5)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **B-2 Spirit** — "[Northrop Grumman B-2 Spirit - FREE](https://sketchfab.com/3d-models/northrop-grumman-b-2-spirit-free-9cd6b00813c04401a5427ae71b7a0cdc)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **Dassault Rafale (M)** — "[Dassault Rafale (M) - Fighter Jet - Free](https://sketchfab.com/3d-models/dassault-rafale-m-fighter-jet-free-0abf2465adb04bc8bc638688fa54ce21)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **F-35 Lightning II** — "[F-35 Lightning II - Fighter Jet - Free](https://sketchfab.com/3d-models/f-35-lightning-ii-fighter-jet-free-b1ab1c0090e34b0fbfe667e706023e6d)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **F-22 Raptor** — "[F-22 Raptor - Fighter Jet - Free](https://sketchfab.com/3d-models/f-22-raptor-fighter-jet-free-508de5c48845456bb033fb267ebe1d1e)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **F/A-18F Super Hornet** — "[Boeing F/A-18F Super Hornet - Free](https://sketchfab.com/3d-models/boeing-fa-18f-super-hornet-free-447caa975f534554a83f70f0877b73fb)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **MiG-29 Fulcrum** — "[MiG-29 - Fighter Jet - Free](https://sketchfab.com/3d-models/mig-29-fighter-jet-free-0a21787096244220b246ec8747e7b09c)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **A-10 Thunderbolt II** — "[A-10 Thunderbolt II - Free](https://sketchfab.com/3d-models/a-10-thunderbolt-ii-free-f297968397534b59bd41fe989497ffcb)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **YF-23 Black Widow II** — "[YF-23 Black Widow II - Fighter Jet - FREE](https://sketchfab.com/3d-models/yf-23-black-widow-ii-fighter-jet-free-f61b51dbfb684db6acf14435bac8cd3c)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **MiG-35 Fulcrum-F** — "[MiG-35 - Fighter Jet - Free](https://sketchfab.com/3d-models/mig-35-fighter-jet-free-1dcea306e8a14ed4ab4d11a819cb6676)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **Su-35 Flanker-E** — "[Sukhoi Su-35 - Fighter Jet - Free](https://sketchfab.com/3d-models/sukhoi-su-35-fighter-jet-free-3213a404e5cb4fb68f778b9acae5109c)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **Saab JAS 39 Gripen** — "[Saab JAS 39 Gripen - Fighter Jet - Free](https://sketchfab.com/3d-models/saab-jas-39-gripen-fighter-jet-free-03d4f4f0f7e94f469299ba7db4c707c4)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **Mitsubishi F-2** — "[Mitsubishi F-2 - Fighter Jet - Free](https://sketchfab.com/3d-models/mitsubishi-f-2-fighter-jet-free-d3d7244554974f499b106e6c11fe3aaf)" by bohmerang is licensed under
+  [CC Attribution-NonCommercial-ShareAlike](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- **Panavia Tornado** — "[Panavia Tornado \"MiG Eater\"](https://sketchfab.com/3d-models/panavia-tornado-mig-eater-05e70ba76b82408abb347c2e0f2c69eb)" by 42manako is licensed under
+  [CC Attribution](https://creativecommons.org/licenses/by/4.0/).
+- **F/A-18 Hornet** — "[F/A-18C Late with AGM-65G](https://sketchfab.com/3d-models/fa-18c-late-with-agm-65g-a9eeeea180484f48b50cdfa14002ea6a)" by Jeyhun1985 is licensed under
+  [CC Attribution](https://creativecommons.org/licenses/by/4.0/).
+- **F-111 Aardvark** — "[F-111F Aardvark with GBU-10](https://sketchfab.com/3d-models/f-111f-aardvark-with-gbu-10-fbd9016ef23d477cb87c4ff5f9529a2a)" by Jeyhun1985 is licensed under
+  [CC Attribution](https://creativecommons.org/licenses/by/4.0/).
 
 > Nota licenza: quasi tutti i modelli 3D (bohmerang) sono **CC BY-NC-SA 4.0** — **non commerciali (NC)** e
-> **ShareAlike (SA)**; il Tornado (42manako) è **CC BY 4.0**. Il vincolo non commerciale dell'intero sito resta
-> per via dei modelli NC.
+> **ShareAlike (SA)**; fanno eccezione, in **CC BY 4.0**, il Tornado (42manako), l'F/A-18 Hornet e l'F-111
+> Aardvark (Jeyhun1985) e l'F-15 Eagle (KojfDiscord). Il vincolo non commerciale dell'intero sito resta per via dei modelli NC.
 > Questo progetto resta gratuito e a scopo divulgativo (uso non commerciale).
 
 ## Licenza
