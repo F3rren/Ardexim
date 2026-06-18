@@ -73,7 +73,7 @@ export default async function AircraftPage({
         <Variants aircraft={a} />
         <Facts aircraft={a} />
         <FinalCta aircraft={a} />
-        <Credits aircraft={a} />
+        <Credits />
       </main>
     </div>
   );

@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import { useCallback, useState } from "react";
 import type { Model3DEntry } from "@/lib/data/aircraft/types";
 import { asset } from "@/lib/basePath";
+import Icon from "@/components/ui/Icon";
 
 const Hangar = dynamic(() => import("@/components/three/Hangar"), {
   ssr: false,
@@ -74,6 +75,26 @@ export default function ModelViewer({
           onReady={handleReady}
         />
       </div>
+
+      {/* credito del creatore del modello: in sovrimpressione, sempre visibile */}
+      {current.credit && (
+        <a
+          href={current.credit.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={`Modello 3D di ${current.credit.author} — ${current.credit.license} (apre Sketchfab)`}
+          className="absolute bottom-3 left-3 z-[2] inline-flex items-center gap-1.5 rounded-full border border-line bg-black/55 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.08em] text-muted2 backdrop-blur-md transition-colors hover:border-gold/60 hover:text-text"
+        >
+          <Icon name="rotate" className="h-3.5 w-3.5 text-goldbr" strokeWidth={1.6} />
+          <span>
+            Modello 3D ·{" "}
+            <span className="font-bold normal-case tracking-normal text-text">
+              {current.credit.author}
+            </span>
+          </span>
+          <span className="hidden text-muted2 sm:inline">· {current.credit.license}</span>
+        </a>
+      )}
 
       {/* switcher varianti (solo se più di un modello) */}
       {models.length > 1 && (
