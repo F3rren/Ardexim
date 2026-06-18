@@ -12,9 +12,11 @@ export interface NavSection {
 export default function Navbar({
   sections = [],
   title,
+  cta = { href: "/", label: "Catalogo" },
 }: {
   sections?: NavSection[];
   title?: string;
+  cta?: { href: string; label: string };
 }) {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("");
@@ -68,10 +70,10 @@ export default function Navbar({
       )}
 
       <Link
-        href="/"
+        href={cta.href}
         className="hidden lg:inline-flex items-center font-mono text-[13px] tracking-[0.1em] uppercase bg-gold text-[#1a1304] px-[18px] min-h-[44px] rounded-[10px] font-bold hover:bg-goldbr transition-colors"
       >
-        Catalogo
+        {cta.label}
       </Link>
 
       {sections.length > 0 && (
@@ -98,6 +100,13 @@ export default function Navbar({
               {s.label}
             </a>
           ))}
+          <Link
+            href={cta.href}
+            onClick={() => setOpen(false)}
+            className="mt-1 inline-flex items-center justify-center font-mono text-[13px] tracking-[0.1em] uppercase bg-gold text-[#1a1304] px-3.5 py-3 rounded-[9px] font-bold"
+          >
+            {cta.label}
+          </Link>
         </div>
       )}
     </nav>

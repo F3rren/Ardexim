@@ -128,7 +128,27 @@ export default function HomeHero({
         <motion.div
           initial={reduce ? false : { opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.65, duration: 0.6 }}
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="mt-8 flex flex-wrap gap-3"
+        >
+          <a
+            href="#catalogo"
+            className="inline-flex items-center gap-2 font-mono uppercase tracking-[0.1em] text-sm px-[26px] min-h-[48px] rounded-[11px] bg-gold text-[#1a1304] font-bold hover:bg-goldbr transition-colors"
+          >
+            Esplora il catalogo →
+          </a>
+          <a
+            href="#intro"
+            className="inline-flex items-center gap-2 font-mono uppercase tracking-[0.1em] text-sm px-[26px] min-h-[48px] rounded-[11px] border border-line text-text hover:border-gold hover:text-goldbr transition-colors"
+          >
+            Cosa offre
+          </a>
+        </motion.div>
+
+        <motion.div
+          initial={reduce ? false : { opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.75, duration: 0.6 }}
           className="mt-9 flex flex-wrap gap-x-12 gap-y-5"
         >
           <Stat value={<CountUp to={aircraftCount} />} label="Velivoli" />

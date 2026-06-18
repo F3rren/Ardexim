@@ -1,10 +1,11 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Aircraft } from "@/lib/data/aircraft/types";
 import { nationTheme } from "@/lib/theme/nations";
 import AircraftCard from "./AircraftCard";
 import Icon from "@/components/ui/Icon";
+import SectionHeader from "@/components/ui/SectionHeader";
 
 type SortKey = "az" | "year-desc" | "year-asc";
 type StatusKey = "all" | "in-servizio" | "ritirato";
@@ -14,54 +15,23 @@ const yearOf = (a: Aircraft) => {
   return m ? Number(m[0]) : 0;
 };
 
-function NationButton({
-  active,
-  onClick,
-  accent,
-  label,
-  count,
-}: {
-  active: boolean;
-  onClick: () => void;
-  accent: string;
-  label: string;
-  count: number;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      aria-pressed={active}
-      className={`relative overflow-hidden rounded-[12px] border bg-gradient-to-b from-panel to-bg2 p-4 text-left transition-colors ${
-        active ? "border-transparent" : "border-line hover:border-gold/40"
-      }`}
-      style={active ? { boxShadow: `inset 0 0 0 2px ${accent}` } : undefined}
-    >
-      <span className="absolute left-0 top-0 h-full w-1" style={{ background: accent }} />
-      <span
-        className="block font-display font-bold text-[1.7rem] leading-none tabular-nums"
-        style={{ color: accent }}
-      >
-        {count}
-      </span>
-      <span className="mt-1.5 block font-mono text-[11px] tracking-[0.12em] uppercase text-muted">
-        {label}
-      </span>
-    </button>
-  );
-}
-
 export default function CatalogExplorer({ aircraft }: { aircraft: Aircraft[] }) {
   const [q, setQ] = useState("");
   const [nation, setNation] = useState(""); // "" = tutte
   const [status, setStatus] = useState<StatusKey>("all");
   const [sort, setSort] = useState<SortKey>("az");
 
-  const nations = useMemo(() => {
-    const m = new Map<string, number>();
-    for (const a of aircraft) m.set(a.country, (m.get(a.country) ?? 0) + 1);
-    return [...m.entries()].sort((a, b) => b[1] - a[1]);
-  }, [aircraft]);
+  // pre-filtro lanciato dalla sezione "Nazioni" (vedi Nations.tsx)
+  useEffect(() => {
+    const onNation = (e: Event) => {
+      const country = (e as CustomEvent<string>).detail;
+      setNation(country);
+      setStatus("all");
+      setQ("");
+    };
+    window.addEventListener("catalog:nation", onNation as EventListener);
+    return () => window.removeEventListener("catalog:nation", onNation as EventListener);
+  }, []);
 
   const filtered = useMemo(() => {
     const s = q.trim().toLowerCase();
@@ -94,34 +64,18 @@ export default function CatalogExplorer({ aircraft }: { aircraft: Aircraft[] }) 
   ];
 
   return (
-    <section className="relative z-[1] mx-auto max-w-[1180px] px-6 pb-[110px]">
-      {/* filtro per nazione */}
-      <div className="mb-5 flex items-center gap-2.5 font-mono text-[11px] tracking-[0.2em] uppercase text-muted2">
-        <span className="inline-block h-px w-5 bg-line" />
-        Filtra per nazione
-      </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
-        <NationButton
-          active={nation === ""}
-          onClick={() => setNation("")}
-          accent="var(--color-goldbr)"
-          label="Tutte"
-          count={aircraft.length}
-        />
-        {nations.map(([country, count]) => (
-          <NationButton
-            key={country}
-            active={nation === country}
-            onClick={() => setNation(nation === country ? "" : country)}
-            accent={nationTheme(country).vars["--color-goldbr"]}
-            label={nationTheme(country).label}
-            count={count}
-          />
-        ))}
-      </div>
+    <section
+      id="catalogo"
+      className="relative z-[1] mx-auto max-w-[1180px] px-6 pb-[110px] pt-[20px] scroll-mt-24"
+    >
+      <SectionHeader
+        eyebrow="Catalogo"
+        title="Tutti i velivoli"
+        text="Cerca per nome, costruttore o ruolo, filtra per stato operativo e ordina la flotta. Per filtrare per nazione, scegli una scuola costruttrice qui sopra."
+      />
 
       {/* barra: ricerca + stato + ordinamento */}
-      <div className="mt-8 flex flex-wrap items-center gap-3">
+      <div className="flex flex-wrap items-center gap-3">
         <div className="relative min-w-[220px] flex-1 max-w-[440px]">
           <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted2">
             <Icon name="radar" className="h-5 w-5" />
@@ -168,16 +122,30 @@ export default function CatalogExplorer({ aircraft }: { aircraft: Aircraft[] }) 
         </select>
       </div>
 
-      {/* conteggio + azzera */}
-      <div className="mt-4 mb-8 flex items-center justify-between font-mono text-[11px] tracking-[0.1em] uppercase text-muted2">
+      {/* conteggio + filtro nazione attivo + azzera */}
+      <div className="mt-4 mb-8 flex flex-wrap items-center gap-3 font-mono text-[11px] tracking-[0.1em] uppercase text-muted2">
         <span>
           {filtered.length} {filtered.length === 1 ? "velivolo" : "velivoli"}
         </span>
+        {nation && (
+          <button
+            type="button"
+            onClick={() => setNation("")}
+            aria-label={`Rimuovi filtro nazione ${nationTheme(nation).label}`}
+            className="inline-flex items-center gap-1.5 rounded-full border px-3 py-1 transition-opacity hover:opacity-80"
+            style={{
+              borderColor: nationTheme(nation).vars["--color-goldbr"],
+              color: nationTheme(nation).vars["--color-goldbr"],
+            }}
+          >
+            {nationTheme(nation).label} ✕
+          </button>
+        )}
         {hasFilters && (
           <button
             type="button"
             onClick={reset}
-            className="inline-flex items-center gap-1.5 text-muted hover:text-goldbr transition-colors"
+            className="ml-auto inline-flex items-center gap-1.5 text-muted hover:text-goldbr transition-colors"
           >
             Azzera filtri ✕
           </button>

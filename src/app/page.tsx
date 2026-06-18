@@ -1,8 +1,16 @@
 import { aircraft } from "@/lib/data/aircraft";
-import Navbar from "@/components/layout/Navbar";
+import Navbar, { type NavSection } from "@/components/layout/Navbar";
 import HomeHero from "@/components/home/HomeHero";
+import Intro from "@/components/home/Intro";
 import Ticker from "@/components/home/Ticker";
+import Nations from "@/components/home/Nations";
 import CatalogExplorer from "@/components/catalog/CatalogExplorer";
+
+// Voci di navigazione della home (data-driven: aggiungere una sezione = una voce qui).
+const sections: NavSection[] = [
+  { id: "intro", label: "Cosa offre" },
+  { id: "nazioni", label: "Nazioni" },
+];
 
 export default function Home() {
   // statistiche per l'hero
@@ -18,9 +26,11 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      <Navbar sections={sections} cta={{ href: "#catalogo", label: "Catalogo" }} />
       <HomeHero aircraftCount={aircraftCount} nationCount={nationCount} yearsSpan={yearsSpan} />
+      <Intro />
       <Ticker />
+      <Nations aircraft={aircraft} />
       <CatalogExplorer aircraft={aircraft} />
     </>
   );
